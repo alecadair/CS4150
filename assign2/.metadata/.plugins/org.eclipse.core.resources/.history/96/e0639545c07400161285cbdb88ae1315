@@ -1,0 +1,9 @@
+typedef struct TreeNode{
+	int collapseResistance;
+	TreeNode* Left;
+	TreeNode* Right;
+};
+
+int main(int argc, char* argv[]){
+
+}

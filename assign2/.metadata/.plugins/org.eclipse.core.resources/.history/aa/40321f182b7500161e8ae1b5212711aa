@@ -1,0 +1,61 @@
+#include <queue>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string>
+
+using namespace std;
+
+typedef struct TreeNode
+{
+  int value;
+  TreeNode *left;
+  TreeNode *right;
+
+}TreeNode;
+
+//void InsertInteger(int value, TreeNode* rootNode){
+//    if( rootNode == 0 )
+//    {
+//
+////    	*leaf = new TreeNode;
+////    	TreeNode* rootNode = leaf;
+////
+////        (*leaf)->value = key;
+////        (*leaf)->left = 0;
+////        (*leaf)->right = 0;
+//    }
+//    //search left
+//    else if(value < (*leaf)->key_value)
+//    {
+////        insert( key, &(*leaf)->left );
+//    }
+//    //search right
+//    else if(value > (*leaf)->key_value)
+//    {
+////        insert( key, &(*leaf)->right );
+//    }
+//}
+//
+//void destroy_tree(struct node *leaf)
+//{
+//  if( leaf != 0 )
+//  {
+//      destroy_tree(leaf->left);
+//      destroy_tree(leaf->right);
+//      delete(leaf);
+//      //free( leaf );
+//  }
+//}
+
+int main(int argc, char* argv[]){
+	string countAndSize;
+	getline();
+	for(int i = 1; i < argc; i ++){
+
+	}
+	TreeNode* rootNode = new TreeNode;
+
+	return 0;
+}
+
+

@@ -1,0 +1,922 @@
+23:58:38 **** Build of configuration Debug for project PS2-5 ****
+make all 
+g++ -std=c++11 -g -o ps2-5
+g++: fatal error: no input files
+compilation terminated.
+make: *** [ps2-5] Error 4
+23:59:43 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp:5:1: warning: ‘typedef’ was ignored in this declaration [enabled by default]
+ };
+ ^
+g++ -std=c++11 -g -o ps2-5
+g++: fatal error: no input files
+compilation terminated.
+make: *** [ps2-5] Error 4
+00:00:33 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+ps2-5.cpp:5:1: warning: ‘typedef’ was ignored in this declaration [enabled by default]
+ };
+ ^
+00:00:39 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+00:00:41 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+00:00:42 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+00:00:42 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+00:00:42 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+00:00:43 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+00:00:43 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+00:00:44 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+00:00:44 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+00:02:00 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+00:02:01 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+00:02:01 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+00:02:06 **** Clean-only build of configuration Debug for project PS2-5 ****
+make clean 
+rm -f ps2-5
+rm -f ps2-5.o
+00:02:08 **** Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp:5:1: warning: ‘typedef’ was ignored in this declaration [enabled by default]
+ };
+ ^
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+ps2-5.cpp:5:1: warning: ‘typedef’ was ignored in this declaration [enabled by default]
+ };
+ ^
+00:03:34 **** Clean-only build of configuration Debug for project PS2-5 ****
+make clean 
+rm -f ps2-5
+rm -f ps2-5.o
+00:03:36 **** Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp:5:2: error: ‘TreeNodeTree’ does not name a type
+  TreeNodeTree;
+  ^
+make: *** [ps2-5.o] Error 1
+00:04:02 **** Clean-only build of configuration Debug for project PS2-5 ****
+make clean 
+rm -f ps2-5
+rm -f ps2-5.o
+00:04:05 **** Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+00:31:35 **** Clean-only build of configuration Debug for project PS2-5 ****
+make clean 
+rm -f ps2-5
+rm -f ps2-5.o
+00:31:49 **** Clean-only build of configuration Debug for project PS2-5 ****
+make clean 
+rm -f ps2-5
+rm -f ps2-5.o
+00:31:51 **** Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+00:32:59 **** Clean-only build of configuration Debug for project PS2-5 ****
+make clean 
+rm -f ps2-5
+rm -f ps2-5.o
+00:33:03 **** Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp: In function ‘void insert(int, node**)’:
+ps2-5.cpp:18:62: error: ‘malloc’ was not declared in this scope
+         *leaf = (struct node*) malloc( sizeof( struct node ) );
+                                                              ^
+ps2-5.cpp: In function ‘void destroy_tree(node*)’:
+ps2-5.cpp:40:18: error: ‘free’ was not declared in this scope
+       free( leaf );
+                  ^
+make: *** [ps2-5.o] Error 1
+00:34:39 **** Clean-only build of configuration Debug for project PS2-5 ****
+make clean 
+rm -f ps2-5
+rm -f ps2-5.o
+00:34:45 **** Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp: In function ‘void insert(int, node**)’:
+ps2-5.cpp:19:11: error: cannot convert ‘node*’ to ‘node**’ in assignment
+      leaf = new node;
+           ^
+make: *** [ps2-5.o] Error 1
+12:12:32 **** Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+12:14:44 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp: In function ‘void insert(int, node**)’:
+ps2-5.cpp:14:18: error: invalid use of incomplete type ‘struct node’
+      *leaf = new node;
+                  ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:16:16: error: invalid use of incomplete type ‘struct node’
+         (*leaf)->value = key;
+                ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:18:16: error: invalid use of incomplete type ‘struct node’
+         (*leaf)->left = 0;
+                ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:19:16: error: invalid use of incomplete type ‘struct node’
+         (*leaf)->right = 0;
+                ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:21:26: error: invalid use of incomplete type ‘struct node’
+     else if(key < (*leaf)->key_value)
+                          ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:23:30: error: invalid use of incomplete type ‘struct node’
+         insert( key, &(*leaf)->left );
+                              ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:25:26: error: invalid use of incomplete type ‘struct node’
+     else if(key > (*leaf)->key_value)
+                          ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:27:30: error: invalid use of incomplete type ‘struct node’
+         insert( key, &(*leaf)->right );
+                              ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp: In function ‘void destroy_tree(node*)’:
+ps2-5.cpp:35:24: error: invalid use of incomplete type ‘struct node’
+       destroy_tree(leaf->left);
+                        ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:36:24: error: invalid use of incomplete type ‘struct node’
+       destroy_tree(leaf->right);
+                        ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:37:18: warning: possible problem detected in invocation of delete operator: [enabled by default]
+       delete(leaf);
+                  ^
+ps2-5.cpp:31:6: warning: ‘leaf’ has incomplete type [enabled by default]
+ void destroy_tree(struct node *leaf)
+      ^
+ps2-5.cpp:10:29: warning: forward declaration of ‘struct node’ [enabled by default]
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:37:18: note: neither the destructor nor the class-specific operator delete will be called, even if they are declared when the class is defined
+       delete(leaf);
+                  ^
+make: *** [ps2-5.o] Error 1
+12:14:59 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp: In function ‘void insert(int, node**)’:
+ps2-5.cpp:14:12: error: cannot convert ‘TreeNode*’ to ‘node*’ in assignment
+      *leaf = new TreeNode;
+            ^
+ps2-5.cpp:16:16: error: invalid use of incomplete type ‘struct node’
+         (*leaf)->value = key;
+                ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:18:16: error: invalid use of incomplete type ‘struct node’
+         (*leaf)->left = 0;
+                ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:19:16: error: invalid use of incomplete type ‘struct node’
+         (*leaf)->right = 0;
+                ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:21:26: error: invalid use of incomplete type ‘struct node’
+     else if(key < (*leaf)->key_value)
+                          ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:23:30: error: invalid use of incomplete type ‘struct node’
+         insert( key, &(*leaf)->left );
+                              ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:25:26: error: invalid use of incomplete type ‘struct node’
+     else if(key > (*leaf)->key_value)
+                          ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:27:30: error: invalid use of incomplete type ‘struct node’
+         insert( key, &(*leaf)->right );
+                              ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp: In function ‘void destroy_tree(node*)’:
+ps2-5.cpp:35:24: error: invalid use of incomplete type ‘struct node’
+       destroy_tree(leaf->left);
+                        ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:36:24: error: invalid use of incomplete type ‘struct node’
+       destroy_tree(leaf->right);
+                        ^
+ps2-5.cpp:10:29: error: forward declaration of ‘struct node’
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:37:18: warning: possible problem detected in invocation of delete operator: [enabled by default]
+       delete(leaf);
+                  ^
+ps2-5.cpp:31:6: warning: ‘leaf’ has incomplete type [enabled by default]
+ void destroy_tree(struct node *leaf)
+      ^
+ps2-5.cpp:10:29: warning: forward declaration of ‘struct node’ [enabled by default]
+ void insert(int key, struct node **leaf){
+                             ^
+ps2-5.cpp:37:18: note: neither the destructor nor the class-specific operator delete will be called, even if they are declared when the class is defined
+       delete(leaf);
+                  ^
+make: *** [ps2-5.o] Error 1
+12:15:14 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp: In function ‘void insert(int, TreeNode**)’:
+ps2-5.cpp:21:28: error: ‘TreeNode’ has no member named ‘key_value’
+     else if(key < (*leaf)->key_value)
+                            ^
+ps2-5.cpp:25:28: error: ‘TreeNode’ has no member named ‘key_value’
+     else if(key > (*leaf)->key_value)
+                            ^
+ps2-5.cpp: In function ‘void destroy_tree(node*)’:
+ps2-5.cpp:35:24: error: invalid use of incomplete type ‘struct node’
+       destroy_tree(leaf->left);
+                        ^
+ps2-5.cpp:31:26: error: forward declaration of ‘struct node’
+ void destroy_tree(struct node *leaf)
+                          ^
+ps2-5.cpp:36:24: error: invalid use of incomplete type ‘struct node’
+       destroy_tree(leaf->right);
+                        ^
+ps2-5.cpp:31:26: error: forward declaration of ‘struct node’
+ void destroy_tree(struct node *leaf)
+                          ^
+ps2-5.cpp:37:18: warning: possible problem detected in invocation of delete operator: [enabled by default]
+       delete(leaf);
+                  ^
+ps2-5.cpp:31:6: warning: ‘leaf’ has incomplete type [enabled by default]
+ void destroy_tree(struct node *leaf)
+      ^
+ps2-5.cpp:31:26: warning: forward declaration of ‘struct node’ [enabled by default]
+ void destroy_tree(struct node *leaf)
+                          ^
+ps2-5.cpp:37:18: note: neither the destructor nor the class-specific operator delete will be called, even if they are declared when the class is defined
+       delete(leaf);
+                  ^
+make: *** [ps2-5.o] Error 1
+12:32:28 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp: In function ‘void InsertInteger(int, TreeNode)’:
+ps2-5.cpp:12:10: error: ‘leaf’ was not declared in this scope
+     if( *leaf == 0 )
+          ^
+ps2-5.cpp:21:13: error: ‘key’ was not declared in this scope
+     else if(key < (*leaf)->key_value)
+             ^
+ps2-5.cpp: In function ‘void destroy_tree(node*)’:
+ps2-5.cpp:35:24: error: invalid use of incomplete type ‘struct node’
+       destroy_tree(leaf->left);
+                        ^
+ps2-5.cpp:31:26: error: forward declaration of ‘struct node’
+ void destroy_tree(struct node *leaf)
+                          ^
+ps2-5.cpp:36:24: error: invalid use of incomplete type ‘struct node’
+       destroy_tree(leaf->right);
+                        ^
+ps2-5.cpp:31:26: error: forward declaration of ‘struct node’
+ void destroy_tree(struct node *leaf)
+                          ^
+ps2-5.cpp:37:18: warning: possible problem detected in invocation of delete operator: [enabled by default]
+       delete(leaf);
+                  ^
+ps2-5.cpp:31:6: warning: ‘leaf’ has incomplete type [enabled by default]
+ void destroy_tree(struct node *leaf)
+      ^
+ps2-5.cpp:31:26: warning: forward declaration of ‘struct node’ [enabled by default]
+ void destroy_tree(struct node *leaf)
+                          ^
+ps2-5.cpp:37:18: note: neither the destructor nor the class-specific operator delete will be called, even if they are declared when the class is defined
+       delete(leaf);
+                  ^
+make: *** [ps2-5.o] Error 1
+12:33:09 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp: In function ‘void InsertInteger(int, TreeNode*)’:
+ps2-5.cpp:21:23: error: ‘leaf’ was not declared in this scope
+     else if(value < (*leaf)->key_value)
+                       ^
+ps2-5.cpp: In function ‘void destroy_tree(node*)’:
+ps2-5.cpp:35:24: error: invalid use of incomplete type ‘struct node’
+       destroy_tree(leaf->left);
+                        ^
+ps2-5.cpp:31:26: error: forward declaration of ‘struct node’
+ void destroy_tree(struct node *leaf)
+                          ^
+ps2-5.cpp:36:24: error: invalid use of incomplete type ‘struct node’
+       destroy_tree(leaf->right);
+                        ^
+ps2-5.cpp:31:26: error: forward declaration of ‘struct node’
+ void destroy_tree(struct node *leaf)
+                          ^
+ps2-5.cpp:37:18: warning: possible problem detected in invocation of delete operator: [enabled by default]
+       delete(leaf);
+                  ^
+ps2-5.cpp:31:6: warning: ‘leaf’ has incomplete type [enabled by default]
+ void destroy_tree(struct node *leaf)
+      ^
+ps2-5.cpp:31:26: warning: forward declaration of ‘struct node’ [enabled by default]
+ void destroy_tree(struct node *leaf)
+                          ^
+ps2-5.cpp:37:18: note: neither the destructor nor the class-specific operator delete will be called, even if they are declared when the class is defined
+       delete(leaf);
+                  ^
+make: *** [ps2-5.o] Error 1
+12:38:34 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp: In function ‘void InsertInteger(int, TreeNode*)’:
+ps2-5.cpp:25:23: error: ‘leaf’ was not declared in this scope
+     else if(value < (*leaf)->key_value)
+                       ^
+ps2-5.cpp: In function ‘void destroy_tree(node*)’:
+ps2-5.cpp:40:24: error: invalid use of incomplete type ‘struct node’
+       destroy_tree(leaf->left);
+                        ^
+ps2-5.cpp:36:26: error: forward declaration of ‘struct node’
+ void destroy_tree(struct node *leaf)
+                          ^
+ps2-5.cpp:41:24: error: invalid use of incomplete type ‘struct node’
+       destroy_tree(leaf->right);
+                        ^
+ps2-5.cpp:36:26: error: forward declaration of ‘struct node’
+ void destroy_tree(struct node *leaf)
+                          ^
+ps2-5.cpp:42:18: warning: possible problem detected in invocation of delete operator: [enabled by default]
+       delete(leaf);
+                  ^
+ps2-5.cpp:36:6: warning: ‘leaf’ has incomplete type [enabled by default]
+ void destroy_tree(struct node *leaf)
+      ^
+ps2-5.cpp:36:26: warning: forward declaration of ‘struct node’ [enabled by default]
+ void destroy_tree(struct node *leaf)
+                          ^
+ps2-5.cpp:42:18: note: neither the destructor nor the class-specific operator delete will be called, even if they are declared when the class is defined
+       delete(leaf);
+                  ^
+ps2-5.cpp: In function ‘int main(int, char**)’:
+ps2-5.cpp:50:22: error: ‘numTreeString’ was not declared in this scope
+  int numTrees = atoi(numTreeString);
+                      ^
+make: *** [ps2-5.o] Error 1
+12:38:51 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp: In function ‘void InsertInteger(int, TreeNode*)’:
+ps2-5.cpp:25:23: error: ‘leaf’ was not declared in this scope
+     else if(value < (*leaf)->key_value)
+                       ^
+ps2-5.cpp: In function ‘void destroy_tree(node*)’:
+ps2-5.cpp:40:24: error: invalid use of incomplete type ‘struct node’
+       destroy_tree(leaf->left);
+                        ^
+ps2-5.cpp:36:26: error: forward declaration of ‘struct node’
+ void destroy_tree(struct node *leaf)
+                          ^
+ps2-5.cpp:41:24: error: invalid use of incomplete type ‘struct node’
+       destroy_tree(leaf->right);
+                        ^
+ps2-5.cpp:36:26: error: forward declaration of ‘struct node’
+ void destroy_tree(struct node *leaf)
+                          ^
+ps2-5.cpp:42:18: warning: possible problem detected in invocation of delete operator: [enabled by default]
+       delete(leaf);
+                  ^
+ps2-5.cpp:36:6: warning: ‘leaf’ has incomplete type [enabled by default]
+ void destroy_tree(struct node *leaf)
+      ^
+ps2-5.cpp:36:26: warning: forward declaration of ‘struct node’ [enabled by default]
+ void destroy_tree(struct node *leaf)
+                          ^
+ps2-5.cpp:42:18: note: neither the destructor nor the class-specific operator delete will be called, even if they are declared when the class is defined
+       delete(leaf);
+                  ^
+make: *** [ps2-5.o] Error 1
+12:41:30 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+12:43:35 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp: In function ‘int main(int, char**)’:
+ps2-5.cpp:52:10: error: no matching function for call to ‘getline()’
+  getline();
+          ^
+ps2-5.cpp:52:10: note: candidates are:
+In file included from ps2-5.cpp:3:0:
+/usr/include/stdio.h:678:20: note: __ssize_t getline(char**, size_t*, FILE*)
+ extern _IO_ssize_t getline (char **__restrict __lineptr,
+                    ^
+/usr/include/stdio.h:678:20: note:   candidate expects 3 arguments, 0 provided
+In file included from /usr/include/c++/4.8.2/string:52:0,
+                 from ps2-5.cpp:4:
+/usr/include/c++/4.8.2/bits/basic_string.h:2793:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     getline(basic_istream<_CharT, _Traits>& __is,
+     ^
+/usr/include/c++/4.8.2/bits/basic_string.h:2793:5: note:   template argument deduction/substitution failed:
+ps2-5.cpp:52:10: note:   candidate expects 2 arguments, 0 provided
+  getline();
+          ^
+In file included from /usr/include/c++/4.8.2/string:53:0,
+                 from ps2-5.cpp:4:
+/usr/include/c++/4.8.2/bits/basic_string.tcc:1068:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+     getline(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8.2/bits/basic_string.tcc:1068:5: note:   template argument deduction/substitution failed:
+ps2-5.cpp:52:10: note:   candidate expects 3 arguments, 0 provided
+  getline();
+          ^
+make: *** [ps2-5.o] Error 1
+12:44:24 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp: In function ‘int main(int, char**)’:
+ps2-5.cpp:52:15: error: ‘cin’ was not declared in this scope
+  std::getline(cin,countAndSize);
+               ^
+make: *** [ps2-5.o] Error 1
+12:44:41 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+12:45:06 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+12:48:14 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+12:50:56 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp: In function ‘int main(int, char**)’:
+ps2-5.cpp:54:34: error: variable ‘std::stringstream stream’ has initializer but incomplete type
+  stringstream stream(countAndSize);
+                                  ^
+ps2-5.cpp:58:19: error: expected primary-expression before ‘)’ token
+   while(stream >> )
+                   ^
+ps2-5.cpp:59:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+ps2-5.cpp:59:2: error: expected ‘;’ before ‘}’ token
+make: *** [ps2-5.o] Error 1
+12:51:59 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp: In function ‘int main(int, char**)’:
+ps2-5.cpp:54:34: error: variable ‘std::stringstream stream’ has initializer but incomplete type
+  stringstream stream(countAndSize);
+                                  ^
+make: *** [ps2-5.o] Error 1
+12:52:49 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp:4:19: fatal error: sstring: No such file or directory
+ #include <sstring>
+                   ^
+compilation terminated.
+make: *** [ps2-5.o] Error 1
+12:53:00 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+12:57:12 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+12:57:15 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+12:57:32 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+g++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+12:57:38 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+19:13:47 **** Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+19:13:57 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+19:44:53 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp:19:18: error: unknown type name 'rootNode'
+                rootNode = new rootNode;
+                               ^
+1 error generated.
+make: *** [ps2-5.o] Error 1
+19:45:14 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+19:46:04 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+19:46:51 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+19:49:43 **** Clean-only build of configuration Debug for project PS2-5 ****
+make clean 
+rm -f ps2-5
+rm -f ps2-5.o
+19:49:45 **** Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+19:49:55 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+19:51:00 **** Clean-only build of configuration Debug for project PS2-5 ****
+make clean 
+rm -f ps2-5
+rm -f ps2-5.o
+19:51:01 **** Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+19:51:06 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+19:53:29 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+19:55:44 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+19:56:46 **** Clean-only build of configuration Debug for project PS2-5 ****
+make clean 
+rm -f ps2-5
+rm -f ps2-5.o
+19:56:54 **** Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+19:59:49 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+20:00:04 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:02:15 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+20:02:20 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:05:38 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+20:06:35 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:06:40 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:08:38 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:10:02 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+20:10:07 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:12:01 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+20:12:09 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:19:51 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+20:19:57 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:20:33 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:22:45 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+20:29:09 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:29:26 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:30:50 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+20:30:56 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:32:59 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:33:48 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:40:32 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+20:45:17 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:48:37 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:53:51 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:53:56 **** Clean-only build of configuration Debug for project PS2-5 ****
+make clean 
+rm -f ps2-5
+rm -f ps2-5.o
+20:54:00 **** Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+20:54:04 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:54:46 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:56:07 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+20:56:10 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:59:33 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+21:00:00 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:07:57 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+21:08:01 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:08:40 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:09:21 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:13:22 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+21:13:25 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:13:29 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:17:45 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+21:17:50 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:20:06 **** Clean-only build of configuration Debug for project PS2-5 ****
+make clean 
+rm -f ps2-5
+rm -f ps2-5.o
+21:20:08 **** Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+21:39:28 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp:71:2: error: use of undeclared identifier 'Queue'; did you mean 'queue'?
+        Queue queue;
+        ^~~~~
+        queue
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/queue:193:29: note: 'queue' declared here
+class _LIBCPP_TYPE_VIS_ONLY queue
+                            ^
+ps2-5.cpp:71:2: error: unknown type name 'Queue'
+        Queue queue;
+        ^
+2 errors generated.
+make: *** [ps2-5.o] Error 1
+21:39:50 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp:71:2: error: use of class template 'queue' requires template arguments
+        queue nodeQueue;
+        ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/queue:193:29: note: template is declared here
+class _LIBCPP_TYPE_VIS_ONLY queue
+                            ^
+1 error generated.
+make: *** [ps2-5.o] Error 1
+21:40:04 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+21:54:11 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp:77:15: error: assigning to 'TreeNode *' from incompatible type 'void'
+                currentNode = nodeQueue.pop();
+                            ^ ~~~~~~~~~~~~~~~
+1 error generated.
+make: *** [ps2-5.o] Error 1
+21:55:23 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+21:57:03 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+22:05:54 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+22:05:59 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+22:07:56 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+22:10:52 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+22:26:17 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+22:29:40 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp:140:16: error: a space is required between consecutive right angle brackets (use '> >')
+        set<vector<int>> vectorSet;
+                      ^~
+                      > >
+1 error generated.
+make: *** [ps2-5.o] Error 1
+22:29:51 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+22:30:40 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+22:30:44 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+22:31:11 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+22:32:24 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+23:11:39 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+23:12:29 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+23:12:45 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+23:19:08 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+ps2-5.cpp:138:16: error: a space is required between consecutive right angle brackets (use '> >')
+        set<vector<int>> vectorSet;
+                      ^~
+                      > >
+1 error generated.
+make: *** [ps2-5.o] Error 1
+23:19:20 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+23:19:26 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+23:19:41 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+23:21:06 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+23:22:13 **** Clean-only build of configuration Debug for project PS2-5 ****
+make clean 
+rm -f ps2-5
+rm -f ps2-5.o
+23:22:18 **** Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+23:22:28 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+23:23:00 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+23:28:33 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+c++    -c -o ps2-5.o ps2-5.cpp
+g++ -std=c++11 -g -o ps2-5 ps2-5.cpp
+23:30:33 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.

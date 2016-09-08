@@ -1,0 +1,47 @@
+#include <queue>
+
+typedef struct TreeNode
+{
+  int value;
+  TreeNode *left;
+  TreeNode *right;
+}TreeNode;
+
+void insert(int key, struct node **leaf){
+    if( *leaf == 0 )
+    {
+        //*leaf = (struct node*) malloc( sizeof( struct node ) );
+    	*leaf = new node;
+
+        (*leaf)->value = key;
+        /* initialize the children to null */
+        (*leaf)->left = 0;
+        (*leaf)->right = 0;
+    }
+    else if(key < (*leaf)->key_value)
+    {
+        insert( key, &(*leaf)->left );
+    }
+    else if(key > (*leaf)->key_value)
+    {
+        insert( key, &(*leaf)->right );
+    }
+}
+
+void destroy_tree(struct node *leaf)
+{
+  if( leaf != 0 )
+  {
+      destroy_tree(leaf->left);
+      destroy_tree(leaf->right);
+      delete(leaf);
+      //free( leaf );
+  }
+}
+
+int main(int argc, char* argv[]){
+	TreeNode rootNode;
+	return 0;
+}
+
+
