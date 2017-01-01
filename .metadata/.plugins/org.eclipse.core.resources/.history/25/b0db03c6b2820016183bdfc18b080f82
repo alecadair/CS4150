@@ -1,0 +1,180 @@
+
+/*
+ * ps4-5.cpp
+ *
+ *  Created on: Sep 22, 2016
+ *      Author: alecadair
+ */
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+#include <string>
+#include <list>
+#include <vector>
+#include <map>
+#include <queue>
+#include <set>
+#include <sstream>
+
+class City{
+public:
+	std::string name;
+	unsigned int vertIndex;
+	unsigned int toll;
+	bool operator()(City* lhs,City* rhs)
+	{
+	  return lhs->toll >= rhs->toll;
+	}
+};
+
+/*class EdgeNode{
+public:
+	EdgeNode* nextNode;
+};*/
+
+class Map{
+public:
+	std::map<std::string,std::set<City*> > adjList;
+	std::map<std::string,City*> legend;
+	//std::list<City> list;
+	unsigned int numCities;
+};
+
+Map* CreateMapFromInput(){
+	Map* roadMap = new Map;
+	std::string numCities;
+	//First Create Cities
+	getline(std::cin,numCities);
+	roadMap->numCities = stoi(numCities);
+	for(unsigned int i = 0; i < roadMap->numCities; i ++){
+		std::set<City*> cities;
+		City* city = new City;
+		std::string cityName;
+		getline(std::cin, cityName);
+		std::stringstream stream(cityName);
+		unsigned int toll = 0;
+		for(unsigned int j = 0; j < 2; j++){
+			std::string name;
+			if(j == 0){
+				stream >> name;
+				city->name = name;
+				std::cout << name;
+
+			}else{
+				stream >> toll;
+				city->toll = toll;
+				std::cout <<" "<< toll << std::endl;
+			}
+		}
+		city->vertIndex = i;
+		roadMap->adjList[city->name] = cities;
+		roadMap->legend[city->name] = city;
+
+	}
+
+	std::string numRoads;
+	getline(std::cin,numRoads);
+	unsigned int numHighways = stoi(numRoads);
+	for(unsigned int i = 0; i < numHighways; i ++){
+		std::string city;
+		getline(std::cin,city);
+		std::stringstream ss(city);
+		std::string city1, city2;
+		for(unsigned int j = 0; j < 2; j++){
+			if(j == 0){
+				ss >> city1;
+			}
+			else{
+				ss >> city2;
+			}
+		}
+		roadMap->adjList[city1].insert(roadMap->legend[city2]);
+	}
+	return roadMap;
+}
+
+unsigned int Dijkstra(Map* roadMap,std::string city1, std::string city2){
+	unsigned int cost = 0;
+	City* city1Ptr = roadMap->legend[city1];
+	City* city2Ptr = roadMap->legend[city2];
+	std::priority_queue<City*,std::vector<City*>, City> queue;
+	std::vector<unsigned int> distances(roadMap->numCities, INT_MAX);
+	std::vector<City*> previousCities(roadMap->numCities,0);
+	queue.push(city1Ptr);
+	distances.at(city1Ptr->vertIndex) = 0;
+	while(!queue.empty()){
+		City* cityPtr = queue.top();
+		queue.pop();
+
+		if(cityPtr == roadMap->legend[city2]){
+			return distances.at(city1Ptr->vertIndex);
+		}
+
+		std::set<City*>::iterator i;
+		std::set<City*> list = roadMap->adjList[cityPtr->name];
+		for(i = list.begin(); i != list.end(); i++){
+			unsigned int neighborVertInd = (*i)->vertIndex;
+			std::string neighborName = (*i)->name;
+			unsigned int neighborToll = (*i)->toll;
+			//unsigned int total = distances.at(neighborVertInd);
+			unsigned int neighborDistance = distances.at(cityPtr->vertIndex)+ neighborToll;
+			if(distances.at(neighborVertInd) > neighborDistance){
+				distances.at(neighborVertInd) = neighborDistance;
+				previousCities.at(neighborVertInd) = cityPtr;
+				queue.push(*i);
+			}
+		}
+		return distances.at(roadMap->legend[city2]->vertIndex);
+	}
+//	City* city1val = roadMap->legend[city1];
+//	queue.push(city1val);
+//	City* city2val = roadMap->legend[city2];
+//	queue.push(city2val);
+//	std::cout<<std::endl;
+//	std::cout<<std::endl;
+//	City* val = queue.top();
+//	queue.pop();
+//	std::cout << val->name <<" " << val->toll << std::endl;
+//	val = queue.top();
+//	queue.pop();
+//	std::cout << val->name <<" " << val->toll << std::endl;
+
+	return cost;
+}
+unsigned int CalculateTrip(Map* roadMap,std::string city1, std::string city2){
+	//std::cout << "CITY1 " << roadMap->legend[city1]->name <<" CITY2 "<<roadMap->legend[city2]->name<<std::endl;
+	unsigned int result = 0;
+	return result;
+}
+
+int main (int argc, char** argv){
+	Map* roadMap = CreateMapFromInput();
+	for(std::map<std::string,std::set<City*> >::iterator it = roadMap->adjList.begin(); it != roadMap->adjList.end(); it++){
+		std::cout << "CITY: " << it->first << std::endl;
+		for(std::set<City*>::iterator it2 = it->second.begin(); it2 != it->second.end(); it2++){
+			City* city = *it2;
+			std::cout << "\t"<< city->name << " TOLL: $" << city->toll << std::endl;
+		}
+	}
+	unsigned int numTrips = 0;
+	std::string trips;
+	getline(std::cin,trips);
+	numTrips = stoi(trips);
+	for(unsigned int i = 0; i < numTrips; i++){
+		std::string city1, city2;
+		std::string line;
+		getline(std::cin,line);
+		std::stringstream str(line);
+		for(unsigned int j = 0; j < 2; j++){
+			if(j == 0){
+				str >> city1;
+			} else{
+				str >> city2;
+			}
+		}
+		unsigned int cost = Dijkstra(roadMap,city1,city2);
+		std::cout << cost << std::endl;
+	}
+	return 0;
+}

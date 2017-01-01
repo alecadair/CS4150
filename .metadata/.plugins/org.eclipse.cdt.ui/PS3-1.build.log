@@ -1,0 +1,7 @@
+23:34:24 **** Incremental Build of configuration Debug for project PS3-1 ****
+make all 
+g++ -g -c ps3-1.cpp
+g++ -g -std=c++11 ps3-1.o -o ps3-1
+
+23:34:29 Build Finished (took 5s.351ms)
+

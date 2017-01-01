@@ -1,0 +1,25 @@
+/*
+ * ps5-6.cpp
+ *
+ *  Created on: Sep 29, 2016
+ *      Author: alecadair
+ */
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+#include <vector>
+#include <set>
+
+
+class Student{
+	std::string name;
+};
+
+class School{
+	std::vector<std::set<Student> > school;
+};
+int main(int argc, char** argv){
+
+}
+

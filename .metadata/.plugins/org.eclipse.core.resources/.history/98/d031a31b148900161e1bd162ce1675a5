@@ -1,0 +1,72 @@
+/*
+ * ps6-6.cpp
+ *
+ *  Created on: Oct 2, 2016
+ *      Author: alecadair
+ */
+#include <stdlib.h>
+//#include <functional>
+#include <stdio.h>
+#include <set>
+#include <vector>
+#include <iostream>
+#include <queue>
+
+
+
+class Edge{
+private:
+	int source;
+	int dest;
+	int weight;
+public:
+	Edge(int _source, int _dest, int _weight){
+		source = _source;
+		dest = _dest;
+		weight = _weight;
+	}
+
+};
+class Node{
+public:
+	int index;
+	std::vector<Edge> edges;
+
+};
+class Graph{
+public:
+	std::vector<Node*> nodes;
+};
+
+int Dijkstra(int source, int dest){
+	std::priority_queue<int, std::vector<int>,std::greater<int> > pq;
+	return 0;
+}
+
+int main(){
+	int i;
+	int numNodes;
+	int numEdges;
+	int numQueries;
+	int startNodeIndex;
+	scanf("%d %d %d %d",&numNodes,&numEdges,&numQueries,&startNodeIndex);
+	Graph graph;
+	for(i = 0; i < numNodes; i++){
+		Node* node = new Node;
+		node->index = i;
+		graph.nodes.push_back(node);
+	}
+
+	for(i = 0; i < numEdges; i ++){
+		int u, v, w;
+		scanf("%d %d %d",&u,&v,&w);
+		Edge edge(u,v,w);
+		graph.nodes.at(u)->edges.push_back(edge);
+	}
+
+	for(i = 0; i < numQueries; i++){
+		int quer;
+		scanf("%d", &quer);
+
+	}
+}

@@ -1,0 +1,7 @@
+isprime 13
+isprime 10
+isprime 11
+isprime 12
+isprime 13
+isprime 100
+isprime 120

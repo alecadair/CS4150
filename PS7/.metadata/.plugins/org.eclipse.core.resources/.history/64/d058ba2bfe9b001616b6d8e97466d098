@@ -1,0 +1,132 @@
+/*
+ * ps7-7.cpp
+ *
+ *  Created on: Oct 26, 2016
+ *      Author: adair
+ */
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <math.h>
+#include <vector>
+
+
+long modulus(long x, long y){
+	if(x < 0){
+		return -((-x)%y);
+	}else{
+		return x%y;
+	}
+}
+
+long mod_exponentiation(long x, long y, long N){
+	if(y == 0){
+		return 1;
+	}
+	else{
+		long z = mod_exponentiation(x,y/2,N);
+		if((y & 0x1) == 0){
+			return modulus((z*z),N);
+		}
+		else{
+			return modulus((x*(z*z)),N);
+		}
+	}
+}
+
+long greatest_common_divisor(long a, long b){
+	if(b == 0){
+		return a;
+	}
+	else{
+		return greatest_common_divisor(b, modulus(a,b));
+	}
+}
+
+/*
+ * x and y are for avoiding returning an array
+ */
+long extended_euclids(long a, long b, long* x, long* y){
+	//long* result = new long[3];
+	if(b == 0){
+		*x = 1;
+		*y = 0;
+		return a;
+	}
+	else{
+		long xPrime,yPrime = 0;
+		long d = extended_euclids(b,modulus(a,b),&xPrime,&yPrime);
+		*x = yPrime;
+		*y = (xPrime - (a/b)*yPrime);
+		return d;
+	}
+}
+
+long modular_inverse(long a, long N){
+
+	long x, y;
+	long d = extended_euclids(a,N,&x,&y);
+	if(d == 1){
+		return modulus(x,N);
+	}else{
+		return -1;
+	}
+}
+
+char is_prime(long N){
+	long a_i = 1;
+	std::vector<long> a_list;
+	a_list.push_back(a_i);
+	for(long i = 1; i < N;i++){
+		a_i = modulus((long)powl(i,N-1),N);
+		a_list.push_back(a_i);
+	}
+	long k = modulus((long)rand(),(long)a_list.size());
+	for(long i = 0; i <= k; i++){
+		if(a_list.at(i) != 1){
+			return 0;
+		}
+	}
+	return 1;
+}
+
+void key(){
+	return;
+}
+int main(int argc, char** argv){
+	std::string line;
+	for(long i = 1; i < 20; i ++){
+		std::cout << "i: " << i << "\tis prime: " << (int)is_prime((long)i) << std::endl;
+	}
+	while(std::getline(std::cin,line)){
+		std::stringstream ss(line);
+		std::string toke;
+		std::vector<std::string> command_strings;
+		while(getline(ss,toke,' ')){
+			command_strings.push_back(toke);
+		}
+		for(unsigned int i = 0; i < command_strings.size(); i ++){
+			std::cout << command_strings[i] <<  " ";
+		}
+		std::cout << "\n";
+		std::string command = command_strings[0];
+		if(command == "isprime"){
+
+		}else if(command == "gcd"){
+
+		}else if(command == "exp"){
+
+		}else if(command == "inverse"){
+
+		}else if(command == "key"){
+
+		}
+
+	}
+	//long gcd = greatest_common_divisor(0,0);
+	return 0;
+}
+

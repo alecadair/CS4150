@@ -1,0 +1,71 @@
+
+/*
+ * ps4-5.cpp
+ *
+ *  Created on: Sep 22, 2016
+ *      Author: alecadair
+ */
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+#include <string>
+#include <list>
+#include <vector>
+#include <map>
+#include <sstream>
+
+class City{
+public:
+	std::string name;
+	int vertIndex;
+	int toll;
+};
+class EdgeNode{
+public:
+	EdgeNode* nextNode;
+};
+
+class Map{
+
+public:
+	std::map<std::string,std::list<City> > roadMap;
+	//std::list<City> list;
+	int numCities;
+};
+
+Map* CreateMapFromInput(){
+	Map* roadMap = new Map;
+	std::string numCities;
+	//First Create Cities
+	getline(std::cin,numCities);
+	roadMap->numCities = stoi(numCities);
+	std::vector<City> cities;
+	for(int i = 0; i < roadMap->numCities; i ++){
+		City city;
+		std::string cityName;
+		getline(std::cin, cityName);
+		std::stringstream stream(cityName);
+		int streamInt = 0;
+		bool isName = true;
+		for(int j = 0; j < 2; j++){
+			std::string name;
+			int toll = 0;
+			if(j == 0){
+				stream >> name;
+				city.name = name;
+
+			}else{
+				stream >> toll;
+				city.toll = toll;
+			}
+		}
+
+	}
+	return roadMap;
+}
+
+int main (int argc, char** argv){
+	Map* roadMap = CreateMapFromInput();
+	return 0;
+}

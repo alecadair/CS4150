@@ -1,0 +1,104 @@
+/*
+ * ps10-4.cpp
+ *
+ *  Created on: Nov 15, 2016
+ *      Author: adair
+ */
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+#include <map>
+#include <vector>
+#include <algorithm>
+typedef struct triple{
+	int r, door_open, k;
+}triple;
+int max_value(int r, int uncloseableRoom, int k, std::vector<std::vector<int> > rooms, int memory[]){
+    if((unsigned)r == rooms.size()){
+        return 0;
+    }
+
+    int result = 0;
+    if(k == ((signed int)rooms.size()) - r){
+        switch(uncloseableRoom){
+        case -1:{
+            int x = rooms[r][0] + max_value(r+1,0,k-1,rooms,memory);
+            int y = rooms[r][1] + max_value(r+1,1,k-1,rooms,memory);
+            result = std::max(x,y);
+            break;
+        } case 0:{
+            result = rooms.at(r)[0] + max_value(r+1,0,k-1, rooms,memory);
+            break;
+        } case 1:{
+            result = rooms.at(r)[1] + max_value(r+1,1,k-1,rooms, memory);
+            break;
+        } default:{
+            return 0;
+            break;
+        }
+        }
+        memory[r] = result;
+        return result;
+    }
+//    if(memory[r] != 0){
+//
+//        	return memory[r];
+//    }
+    switch(uncloseableRoom){
+    case -1 :{
+        int x = rooms[r][0] + max_value(r+1,0,k-1,rooms, memory);
+        int y = rooms[r][1] + max_value(r+1,1,k-1,rooms, memory);
+        int z = rooms[r][1] + rooms[r][0] + max_value(r+1,-1,k,rooms, memory);
+        int max = std::max(x,y);
+        result = std::max(max,z);
+        break;
+    }
+    case 0 :{
+        int x = rooms[r][0] + max_value(r+1, 0,k-1,rooms, memory);
+        int y = rooms[r][0] + rooms[r][1] + max_value(r+1,-1,k,rooms, memory);
+        result = std::max(x,y);
+        break;
+    }
+    case 1 :{
+        int x = rooms[r][1] + max_value(r+1,1,k-1,rooms, memory);
+        int y = rooms[r][1] + rooms.at(r)[0] + max_value(r+1,-1,k,rooms, memory);
+        result = std::max(x,y);
+        break;
+    }
+    default:{
+        return 0;
+        break;
+    }
+    }
+    memory[r] = result;
+    return result;
+}
+void function_call2(std::vector<std::vector<int> > rooms, int N, int K){
+    int memory[rooms.size()];
+    std::map<triple,int> cache;
+    for(int i = 0; i < rooms.size(); i ++){
+    	memory[i] = 0;
+    }
+	int result = max_value(0,-1,K,rooms,memory);
+    std::cout<< result << std::endl;
+}
+
+int main(int argc, char** arv){
+    while(1){
+        int N, K;
+        scanf("%d %d",&N,&K);
+        if((N == 0)&&(K==0)){
+            break;
+        }
+        std::vector<std::vector <int> > rooms(N);
+        for(int i = 0; i < N; i ++){
+            int x,y;
+            scanf("%d %d", &x,&y);
+            rooms.at(i).push_back(x);
+            rooms.at(i).push_back(y);
+        }
+        function_call2(rooms,N,K);
+    }
+    return 0;
+}

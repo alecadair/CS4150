@@ -1,0 +1,20 @@
+/*
+ * ps6-6.cpp
+ *
+ *  Created on: Oct 2, 2016
+ *      Author: alecadair
+ */
+#include <stdlib.h>
+#include <stdio.h>
+
+#include <vector>
+#include <iostream>
+
+int main(){
+	int numNodes;
+	int numEdges;
+	int numQueries;
+	int startNodeIndex;
+	std::scanf("%d %d %d %d",&numNodes,&numEdges,&numQueries,&startNodeIndex);
+
+}

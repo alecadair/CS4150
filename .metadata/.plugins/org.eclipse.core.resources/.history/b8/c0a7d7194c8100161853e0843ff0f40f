@@ -1,0 +1,42 @@
+/*
+ * ps4-5.cpp
+ *
+ *  Created on: Sep 22, 2016
+ *      Author: alecadair
+ */
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+#include <string>
+//#include <utility>
+#include <list>
+
+class City{
+public:
+	std::string name;
+	int vertIndex;
+	int toll;
+};
+
+class EdgeNode{
+public:
+	EdgeNode* nextNode;
+};
+
+class Map{
+public:
+	std::list<int> list;
+	int numCities;
+	int numHighways;
+};
+
+int main (int argc, char** argv){
+
+
+	return 0;
+}
+
+
+
+

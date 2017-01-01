@@ -1,0 +1,37 @@
+
+/*
+ * ps4-5.cpp
+ *
+ *  Created on: Sep 22, 2016
+ *      Author: alecadair
+ */
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+#include <string>
+#include <list>
+#include <map>
+
+class City{
+public:
+	std::string name;
+	int vertIndex;
+	int toll;
+};
+class EdgeNode{
+public:
+	EdgeNode* nextNode;
+};
+
+class Map{
+
+public:
+	std::map<std::string,City> map;
+	std::list<City> list;
+	int numCities;
+};
+
+
+
+

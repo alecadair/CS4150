@@ -1,0 +1,1091 @@
+20:38:30 **** Clean-only build of configuration Debug for project PS5-6 ****
+make clean 
+rm -f ps5-6
+rm -f ps5-6.o
+20:38:42 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:38:43 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:38:43 **** Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+20:39:21 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:39:37 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:40:21 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:40:21 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:40:21 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+20:41:22 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:41:22 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:41:22 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+20:45:48 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:48 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:48 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+20:48:20 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:48:20 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:48:20 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+20:59:35 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:59:35 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:59:35 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+21:02:13 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:02:13 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:02:13 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+21:03:10 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:03:10 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:03:10 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+21:27:34 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:27:35 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:27:35 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+ps5-6.cpp:78:38: error: no viable conversion from '__map_iterator<__tree_iterator<__value_type<[...], Student *>, std::__1::__tree_node<std::__1::__value_type<std::__1::basic_string<char>, Student *>, void *> *, [...]>>' to '__map_iterator<__tree_iterator<__value_type<[...], int>, std::__1::__tree_node<std::__1::__value_type<std::__1::basic_string<char>, int>, void *> *, [...]>>'
+        std::map<std::string,int>::iterator nameIter = school->legend.begin();
+                                            ^          ~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:648:29: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'iterator' (aka '__map_iterator<typename __base::iterator>') to 'const std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_string<char>, int>, std::__1::__tree_node<std::__1::__value_type<std::__1::basic_string<char>, int>, void *> *, long> > &' for 1st argument
+class _LIBCPP_TYPE_VIS_ONLY __map_iterator
+                            ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:672:5: note: candidate constructor not viable: no known conversion from 'iterator' (aka '__map_iterator<typename __base::iterator>') to 'std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_string<char>, int>, std::__1::__tree_node<std::__1::__value_type<std::__1::basic_string<char>, int>, void *> *, long>' for 1st argument
+    __map_iterator(_TreeIterator __i) _NOEXCEPT : __i_(__i) {}
+    ^
+1 error generated.
+make: *** [ps5-6.o] Error 1
+21:28:04 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:28:04 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:28:04 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+ps5-6.cpp:81:33: error: member reference type 'value_type' (aka 'pair<__key_type, __mapped_type>') is not a pointer; maybe you meant to use '.'?
+                std::string name = (*nameIter)->first;
+                                   ~~~~~~~~~~~^~
+                                              .
+1 error generated.
+make: *** [ps5-6.o] Error 1
+21:28:19 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:28:19 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:28:20 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+21:43:05 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:43:05 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:43:05 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+21:43:58 **** Clean-only build of configuration Debug for project PS3-6 ****
+make clean 
+rm -f ps3-6
+rm -f ps3-6.o
+21:43:59 **** Clean-only build of configuration Debug for project PS4-5 ****
+make clean 
+rm -f ps4-5
+rm -f ps4-5.o
+21:43:59 **** Clean-only build of configuration Debug for project PS5-6 ****
+make clean 
+rm -f ps5-6
+rm -f ps5-6.o
+21:44:07 **** Build of configuration Debug for project PS3-6 ****
+make all 
+c++    -c -o ps3-6.o ps3-6.cpp
+g++ -std=c++11 -g -o ps3-6 ps3-6.cpp
+21:44:10 **** Build of configuration Debug for project PS4-5 ****
+make all 
+c++    -c -o ps4-5.o ps4-5.cpp
+g++ -std=c++11 -g -Wall -o ps4-5 ps4-5.cpp
+21:44:12 **** Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+21:49:57 **** Clean-only build of configuration Debug for project PS3-6 ****
+make clean 
+rm -f ps3-6
+rm -f ps3-6.o
+21:49:58 **** Clean-only build of configuration Debug for project PS4-5 ****
+make clean 
+rm -f ps4-5
+rm -f ps4-5.o
+21:49:58 **** Clean-only build of configuration Debug for project PS5-6 ****
+make clean 
+rm -f ps5-6
+rm -f ps5-6.o
+21:50:03 **** Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+21:54:13 **** Build of configuration Debug for project PS3-6 ****
+make all 
+c++    -c -o ps3-6.o ps3-6.cpp
+g++ -std=c++11 -g -o ps3-6 ps3-6.cpp
+21:54:17 **** Build of configuration Debug for project PS4-5 ****
+make all 
+c++    -c -o ps4-5.o ps4-5.cpp
+g++ -std=c++11 -g -Wall -o ps4-5 ps4-5.cpp
+21:54:19 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+22:00:17 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+22:00:18 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+22:00:18 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+22:11:36 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+22:11:36 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+22:11:37 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+22:19:13 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+22:19:13 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+22:19:13 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+ps5-6.cpp:121:6: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for(auto nameIt : student_names){
+            ^
+ps5-6.cpp:121:18: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for(auto nameIt : student_names){
+                        ^
+ps5-6.cpp:128:6: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for(auto i : restOfNames){
+            ^
+ps5-6.cpp:128:13: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for(auto i : restOfNames){
+                   ^
+4 warnings generated.
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+ps5-6.cpp:120:34: warning: unused variable 'nameIt' [-Wunused-variable]
+        std::set<std::string>::iterator nameIt = student_names.begin();
+                                        ^
+1 warning generated.
+22:19:45 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+22:19:45 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+22:19:45 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+ps5-6.cpp:121:6: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for(auto nameIt : student_names){
+            ^
+ps5-6.cpp:121:18: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for(auto nameIt : student_names){
+                        ^
+ps5-6.cpp:128:12: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for(const auto &i : restOfNames){
+                  ^
+ps5-6.cpp:128:20: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for(const auto &i : restOfNames){
+                          ^
+4 warnings generated.
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+ps5-6.cpp:120:34: warning: unused variable 'nameIt' [-Wunused-variable]
+        std::set<std::string>::iterator nameIt = student_names.begin();
+                                        ^
+1 warning generated.
+22:20:03 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+22:24:05 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+22:24:06 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+22:24:06 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+ps5-6.cpp:121:6: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for(auto nameIt : student_names){
+            ^
+ps5-6.cpp:121:18: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for(auto nameIt : student_names){
+                        ^
+ps5-6.cpp:128:6: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for(auto i : restOfNames){
+            ^
+ps5-6.cpp:128:13: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for(auto i : restOfNames){
+                   ^
+4 warnings generated.
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+ps5-6.cpp:120:34: warning: unused variable 'nameIt' [-Wunused-variable]
+        std::set<std::string>::iterator nameIt = student_names.begin();
+                                        ^
+1 warning generated.
+22:24:18 **** Clean-only build of configuration Debug for project PS3-6 ****
+make clean 
+rm -f ps3-6
+rm -f ps3-6.o
+22:24:18 **** Clean-only build of configuration Debug for project PS4-5 ****
+make clean 
+rm -f ps4-5
+rm -f ps4-5.o
+22:24:18 **** Clean-only build of configuration Debug for project PS5-6 ****
+make clean 
+rm -f ps5-6
+rm -f ps5-6.o
+22:24:22 **** Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+ps5-6.cpp:121:6: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for(auto nameIt : student_names){
+            ^
+ps5-6.cpp:121:18: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for(auto nameIt : student_names){
+                        ^
+ps5-6.cpp:128:6: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for(auto i : restOfNames){
+            ^
+ps5-6.cpp:128:13: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for(auto i : restOfNames){
+                   ^
+4 warnings generated.
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+ps5-6.cpp:120:34: warning: unused variable 'nameIt' [-Wunused-variable]
+        std::set<std::string>::iterator nameIt = student_names.begin();
+                                        ^
+1 warning generated.
+23:08:30 **** Build of configuration Debug for project PS3-6 ****
+make all 
+c++    -c -o ps3-6.o ps3-6.cpp
+g++ -std=c++11 -g -o ps3-6 ps3-6.cpp
+23:08:39 **** Build of configuration Debug for project PS4-5 ****
+make all 
+c++    -c -o ps4-5.o ps4-5.cpp
+g++ -std=c++11 -g -Wall -o ps4-5 ps4-5.cpp
+23:08:41 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+23:09:22 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+23:09:22 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+23:09:22 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+23:13:49 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+23:13:49 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+23:13:49 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+23:32:53 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+23:32:54 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+23:32:54 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+ps5-6.cpp:131:15: error: invalid operands to binary expression ('ostream' (aka 'basic_ostream<char>') and 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >'))
+                                std::cout << weightsToNames.at(j) << " ";
+                                ~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:207:20: note: candidate function not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'const void *' for 1st argument; take the address of the argument with &
+    basic_ostream& operator<<(const void* __p);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:191:20: note: candidate function not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'std::__1::basic_ostream<char> &(*)(std::__1::basic_ostream<char> &)' for 1st argument
+    basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&));
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:192:20: note: candidate function not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'basic_ios<char_type, traits_type> &(*)(basic_ios<char_type, traits_type> &)' for 1st argument
+    basic_ostream& operator<<(basic_ios<char_type, traits_type>&
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:194:20: note: candidate function not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'std::__1::ios_base &(*)(std::__1::ios_base &)' for 1st argument
+    basic_ostream& operator<<(ios_base& (*__pf)(ios_base&));
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:195:20: note: candidate function not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'bool' for 1st argument
+    basic_ostream& operator<<(bool __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:196:20: note: candidate function not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'short' for 1st argument
+    basic_ostream& operator<<(short __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:197:20: note: candidate function not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'unsigned short' for 1st argument
+    basic_ostream& operator<<(unsigned short __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:198:20: note: candidate function not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'int' for 1st argument
+    basic_ostream& operator<<(int __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:199:20: note: candidate function not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'unsigned int' for 1st argument
+    basic_ostream& operator<<(unsigned int __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:200:20: note: candidate function not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'long' for 1st argument
+    basic_ostream& operator<<(long __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:201:20: note: candidate function not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'unsigned long' for 1st argument
+    basic_ostream& operator<<(unsigned long __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:202:20: note: candidate function not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'long long' for 1st argument
+    basic_ostream& operator<<(long long __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:203:20: note: candidate function not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'unsigned long long' for 1st argument
+    basic_ostream& operator<<(unsigned long long __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:204:20: note: candidate function not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'float' for 1st argument
+    basic_ostream& operator<<(float __f);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:205:20: note: candidate function not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'double' for 1st argument
+    basic_ostream& operator<<(double __f);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:206:20: note: candidate function not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'long double' for 1st argument
+    basic_ostream& operator<<(long double __f);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:208:20: note: candidate function not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'basic_streambuf<char_type, traits_type> *' for 1st argument
+    basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:785:1: note: candidate function [with _CharT = char, _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'char' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:818:1: note: candidate function [with _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, char __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:825:1: note: candidate function [with _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'signed char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, signed char __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:832:1: note: candidate function [with _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'unsigned char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:846:1: note: candidate function [with _CharT = char, _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'const char *' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:892:1: note: candidate function [with _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'const char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const char* __str)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:899:1: note: candidate function [with _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'const signed char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:907:1: note: candidate function [with _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'const unsigned char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:1086:1: note: candidate function [with _CharT = char, _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >') to 'const std::__1::error_code' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:778:1: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >')
+operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:839:1: note: candidate template ignored: could not match 'const _CharT *' against 'mapped_type' (aka 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >')
+operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:1077:1: note: candidate template ignored: could not match 'basic_string' against 'vector'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:1094:1: note: candidate template ignored: could not match 'shared_ptr' against 'vector'
+operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:1101:1: note: candidate template ignored: could not match 'bitset' against 'vector'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x)
+^
+1 error generated.
+make: *** [ps5-6.o] Error 1
+23:33:20 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+23:33:20 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+23:33:20 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+23:33:25 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+23:33:25 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+23:33:26 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+23:35:06 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+23:35:07 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+23:35:07 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+18:47:24 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+18:47:25 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+18:47:26 **** Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+
+**** Build of configuration Debug for project PS6-6 ****
+
+Nothing to build for project PS6-6
+19:00:29 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+19:00:30 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+19:00:31 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+19:00:31 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+Building file: ../ps6-6.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ps6-6.d" -MT"ps6-6.o" -o "ps6-6.o" "../ps6-6.cpp"
+Finished building: ../ps6-6.cpp
+ 
+Building target: PS6-6
+Invoking: Cross G++ Linker
+g++  -o "PS6-6"  ./ps6-6.o   
+Finished building target: PS6-6
+ 
+19:03:27 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+19:03:27 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+19:03:27 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+19:03:28 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+Building file: ../ps6-6.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ps6-6.d" -MT"ps6-6.o" -o "ps6-6.o" "../ps6-6.cpp"
+Finished building: ../ps6-6.cpp
+ 
+Building target: PS6-6
+Invoking: Cross G++ Linker
+g++  -o "PS6-6"  ./ps6-6.o   
+Finished building target: PS6-6
+ 
+19:05:25 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+19:09:01 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+19:09:01 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+19:09:02 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+19:09:02 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+19:57:53 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+19:57:54 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+19:57:54 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+19:57:54 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+ps6-6.cpp:56:9: error: 'nodes' is a private member of 'Graph'
+                graph.nodes.push_back(node);
+                      ^
+ps6-6.cpp:37:21: note: implicitly declared private here
+        std::vector<Node*> nodes;
+                           ^
+ps6-6.cpp:63:9: error: 'nodes' is a private member of 'Graph'
+                graph.nodes.at(u)->edges.push_back(edge);
+                      ^
+ps6-6.cpp:37:21: note: implicitly declared private here
+        std::vector<Node*> nodes;
+                           ^
+2 errors generated.
+make: *** [ps6-6.o] Error 1
+19:58:16 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+19:58:16 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+19:58:16 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+19:58:16 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+20:50:21 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:50:21 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:50:21 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:50:22 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+ps6-6.cpp:56:45: error: 'weight' is a private member of 'Edge'
+                        int dist = distances[currentNode] + edge.weight;
+                                                                 ^
+ps6-6.cpp:20:6: note: declared private here
+        int weight;
+            ^
+ps6-6.cpp:57:29: error: 'dest' is a private member of 'Edge'
+                        if(dist < distances[edge.dest]){
+                                                 ^
+ps6-6.cpp:19:6: note: declared private here
+        int dest;
+            ^
+ps6-6.cpp:58:20: error: 'dest' is a private member of 'Edge'
+                                distances[edge.dest] = dist;
+                                               ^
+ps6-6.cpp:19:6: note: declared private here
+        int dest;
+            ^
+ps6-6.cpp:59:18: error: 'dest' is a private member of 'Edge'
+                                pq.push(edge.dest);
+                                             ^
+ps6-6.cpp:19:6: note: declared private here
+        int dest;
+            ^
+4 errors generated.
+make: *** [ps6-6.o] Error 1
+20:50:48 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:50:49 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:50:49 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:50:49 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+ps6-6.cpp:40:8: warning: unused variable 'j' [-Wunused-variable]
+        int i,j;
+              ^
+1 warning generated.
+20:55:27 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:55:28 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:55:28 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:55:28 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+ps6-6.cpp:40:8: warning: unused variable 'j' [-Wunused-variable]
+        int i,j;
+              ^
+1 warning generated.
+20:55:41 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:55:41 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:55:41 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:55:41 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+20:56:27 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:56:27 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:56:27 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:56:27 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+20:58:13 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:58:14 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+20:58:14 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+20:58:14 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+ps6-6.cpp:74:8: warning: unused variable 'i' [-Wunused-variable]
+                        int i = 1;
+                            ^
+1 warning generated.
+20:58:24 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:00:01 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:03:10 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:03:10 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:03:11 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:03:11 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+ps6-6.cpp:74:8: warning: unused variable 'i' [-Wunused-variable]
+                        int i = 1;
+                            ^
+1 warning generated.
+21:04:00 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:04:00 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:04:00 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:04:00 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+ps6-6.cpp:74:8: warning: unused variable 'i' [-Wunused-variable]
+                        int i = 1;
+                            ^
+1 warning generated.
+21:04:16 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:04:16 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:04:16 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:04:16 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+ps6-6.cpp:74:8: warning: unused variable 'i' [-Wunused-variable]
+                        int i = 1;
+                            ^
+1 warning generated.
+21:04:50 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+ps6-6.cpp:74:8: warning: unused variable 'i' [-Wunused-variable]
+                        int i = 1;
+                            ^
+1 warning generated.
+21:05:04 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:05:41 **** Clean-only build of configuration Debug for project PS3-6 ****
+make clean 
+rm -f ps3-6
+rm -f ps3-6.o
+21:05:42 **** Clean-only build of configuration Debug for project PS4-5 ****
+make clean 
+rm -f ps4-5
+rm -f ps4-5.o
+21:05:42 **** Clean-only build of configuration Debug for project PS5-6 ****
+make clean 
+rm -f ps5-6
+rm -f ps5-6.o
+21:05:42 **** Clean-only build of configuration Debug for project PS6-6 ****
+make clean 
+rm -f ps6-6
+rm -f ps6-6.o
+21:05:47 **** Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+ps6-6.cpp:74:8: warning: unused variable 'i' [-Wunused-variable]
+                        int i = 1;
+                            ^
+1 warning generated.
+21:06:42 **** Clean-only build of configuration Debug for project PS3-6 ****
+make clean 
+rm -f ps3-6
+rm -f ps3-6.o
+21:06:43 **** Clean-only build of configuration Debug for project PS4-5 ****
+make clean 
+rm -f ps4-5
+rm -f ps4-5.o
+21:06:43 **** Clean-only build of configuration Debug for project PS5-6 ****
+make clean 
+rm -f ps5-6
+rm -f ps5-6.o
+21:06:43 **** Clean-only build of configuration Debug for project PS6-6 ****
+make clean 
+rm -f ps6-6
+rm -f ps6-6.o
+21:06:46 **** Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+ps6-6.cpp:74:8: warning: unused variable 'i' [-Wunused-variable]
+                        int i = 1;
+                            ^
+1 warning generated.
+21:06:52 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:07:54 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:08:58 **** Build of configuration Debug for project PS3-6 ****
+make all 
+c++    -c -o ps3-6.o ps3-6.cpp
+g++ -std=c++11 -g -o ps3-6 ps3-6.cpp
+21:09:02 **** Build of configuration Debug for project PS4-5 ****
+make all 
+c++    -c -o ps4-5.o ps4-5.cpp
+g++ -std=c++11 -g -Wall -o ps4-5 ps4-5.cpp
+21:09:04 **** Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+21:09:06 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:09:12 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:11:33 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:12:02 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:14:08 **** Clean-only build of configuration Debug for project PS3-6 ****
+make clean 
+rm -f ps3-6
+rm -f ps3-6.o
+21:14:08 **** Clean-only build of configuration Debug for project PS4-5 ****
+make clean 
+rm -f ps4-5
+rm -f ps4-5.o
+21:14:09 **** Clean-only build of configuration Debug for project PS5-6 ****
+make clean 
+rm -f ps5-6
+rm -f ps5-6.o
+21:14:09 **** Clean-only build of configuration Debug for project PS6-6 ****
+make clean 
+rm -f ps6-6
+rm -f ps6-6.o
+21:16:41 **** Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+ps6-6.cpp:74:8: warning: unused variable 'i' [-Wunused-variable]
+                        int i = 1;
+                            ^
+1 warning generated.
+21:17:50 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:19:14 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:21:58 **** Build of configuration Debug for project PS3-6 ****
+make all 
+c++    -c -o ps3-6.o ps3-6.cpp
+g++ -std=c++11 -g -o ps3-6 ps3-6.cpp
+21:22:02 **** Build of configuration Debug for project PS4-5 ****
+make all 
+c++    -c -o ps4-5.o ps4-5.cpp
+g++ -std=c++11 -g -Wall -o ps4-5 ps4-5.cpp
+21:22:04 **** Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+21:22:07 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+ps6-6.cpp:73:6: error: use of undeclared identifier 'numNode'; did you mean 'numNodes'?
+                if(numNode == 0){
+                   ^~~~~~~
+                   numNodes
+ps6-6.cpp:67:6: note: 'numNodes' declared here
+        int numNodes;
+            ^
+1 error generated.
+make: *** [ps6-6.o] Error 1
+21:22:11 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:22:11 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:22:11 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:22:11 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+ps6-6.cpp:74:8: warning: unused variable 'i' [-Wunused-variable]
+                        int i = 1;
+                            ^
+1 warning generated.
+21:23:41 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:23:41 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:23:41 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:23:41 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+21:24:12 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:24:12 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:24:12 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:24:12 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:24:25 **** Clean-only build of configuration Debug for project PS3-6 ****
+make clean 
+rm -f ps3-6
+rm -f ps3-6.o
+21:24:25 **** Clean-only build of configuration Debug for project PS4-5 ****
+make clean 
+rm -f ps4-5
+rm -f ps4-5.o
+21:24:26 **** Clean-only build of configuration Debug for project PS5-6 ****
+make clean 
+rm -f ps5-6
+rm -f ps5-6.o
+21:24:26 **** Clean-only build of configuration Debug for project PS6-6 ****
+make clean 
+rm -f ps6-6
+rm -f ps6-6.o
+21:24:28 **** Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+21:29:09 **** Build of configuration Debug for project PS3-6 ****
+make all 
+c++    -c -o ps3-6.o ps3-6.cpp
+g++ -std=c++11 -g -o ps3-6 ps3-6.cpp
+21:29:14 **** Build of configuration Debug for project PS4-5 ****
+make all 
+c++    -c -o ps4-5.o ps4-5.cpp
+g++ -std=c++11 -g -Wall -o ps4-5 ps4-5.cpp
+21:29:16 **** Build of configuration Debug for project PS5-6 ****
+make all 
+c++    -c -o ps5-6.o ps5-6.cpp
+g++ -std=c++11 -g -Wall -o ps5-6 ps5-6.cpp
+21:29:18 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:29:22 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:34:13 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:34:13 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:34:14 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:34:14 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+21:36:57 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:36:57 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:36:58 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:36:58 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+21:43:52 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:43:53 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+21:43:53 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+21:43:53 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+22:34:28 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+22:34:29 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+22:34:29 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+22:34:29 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+ps6-6.cpp:75:9: error: no viable conversion from 'Node *' to 'Node'
+                        Node node = new Node;
+                             ^      ~~~~~~~~
+ps6-6.cpp:28:7: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'Node *' to 'const Node &' for 1st argument; dereference the argument with *
+class Node{
+      ^
+1 error generated.
+make: *** [ps6-6.o] Error 1
+22:34:55 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+22:34:55 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+22:34:56 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+22:34:56 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+22:35:23 **** Incremental Build of configuration Debug for project PS3-6 ****
+make all 
+make: Nothing to be done for `all'.
+22:35:23 **** Incremental Build of configuration Debug for project PS4-5 ****
+make all 
+make: Nothing to be done for `all'.
+22:35:23 **** Incremental Build of configuration Debug for project PS5-6 ****
+make all 
+make: Nothing to be done for `all'.
+22:35:23 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp

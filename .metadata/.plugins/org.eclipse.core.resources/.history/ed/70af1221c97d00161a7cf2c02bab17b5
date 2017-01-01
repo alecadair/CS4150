@@ -1,0 +1,178 @@
+
+/*
+ * ps3-6.cpp
+ *
+ *  Created on: Sep 17, 2016
+ *      Author: adair
+ */
+#include <stdlib.h>
+#include <stdio.h>
+#include <sstream>
+#include <iostream>
+#include <math.h>
+#include <vector>
+
+class Point{
+public:
+	unsigned long  x, y;
+};
+
+class Galaxy{
+public:
+	Point location;
+	unsigned long starCount;
+};
+
+class  UniverseTreeNode{
+public:
+  Galaxy* galaxy;
+  UniverseTreeNode* left;
+  UniverseTreeNode* right;
+};
+
+UniverseTreeNode* AddGalaxy(Galaxy* galaxy, UniverseTreeNode* rootNode){
+	if(rootNode == 0){
+		rootNode = new UniverseTreeNode;
+		rootNode->galaxy = galaxy;
+		rootNode->left = 0;
+		rootNode->right = 0;
+		return rootNode;
+	}
+	else{
+		UniverseTreeNode* currentNode = rootNode;
+		while(currentNode != 0){
+			unsigned long galaxyValue =(unsigned long) galaxy->location.x*galaxy->location.x +(unsigned long) galaxy->location.y*galaxy->location.y;
+			unsigned long nodeValue = (unsigned long) currentNode->galaxy->location.x*currentNode->galaxy->location.x + (unsigned long)currentNode->galaxy->location.y*currentNode->galaxy->location.y;
+			if(galaxyValue < nodeValue){
+				if(currentNode->left == 0){
+					currentNode->left = new UniverseTreeNode;
+					currentNode->left->galaxy = galaxy;
+					currentNode->left->left = 0;
+					currentNode->left->right = 0;
+					currentNode = 0;
+				}
+				else{
+					currentNode = currentNode->left;
+				}
+			}
+			else{
+				if(currentNode->right == 0){
+					currentNode->right = new UniverseTreeNode;
+					currentNode->right->galaxy = galaxy;
+					currentNode->right->right = 0;
+					currentNode->right->left = 0;
+					currentNode = 0;
+				}
+				else{
+					currentNode = currentNode->right;
+				}
+			}
+		}
+		return rootNode;
+	}
+}
+
+
+
+Galaxy* FindGalaxy(Point p ,UniverseTreeNode* rootNode, unsigned long d){
+	unsigned long galaxyHash =(unsigned long) p.x*p.x +(unsigned long) p.y*p.y;
+	UniverseTreeNode* currentNode = rootNode;
+	while(currentNode != 0){
+		unsigned long x = currentNode->galaxy->location.x;
+		unsigned long y = currentNode->galaxy->location.y;
+		unsigned long nodeHash = (unsigned long) x*x + y*y;
+		unsigned long currentDistance =((p.x - currentNode->galaxy->location.x)*(p.x - currentNode->galaxy->location.x) +(p.y - currentNode->galaxy->location.y)*(p.y - currentNode->galaxy->location.y));
+		if(currentDistance <= (d*d)){
+			return currentNode->galaxy;
+		}else{
+			if(galaxyHash < nodeHash){
+				currentNode = currentNode->left;
+			}
+			else{
+				currentNode = currentNode->right;
+			}
+		}
+	}
+	return 0;
+}
+
+std::vector<Point> GetInput(unsigned long numStars){
+	std::vector<Point> coords;
+	for(unsigned long i = 0; i <numStars; i++){
+		Point p;
+		std::string coordS;
+		std::getline(std::cin,coordS);
+		std::stringstream stream2(coordS);
+		unsigned long coord;
+		unsigned long s = 0;
+		while(stream2 >> coord){
+			if(s == 0){
+				p.x = coord;
+				s++;
+			}else{
+				p.y = coord;
+				s = 0;
+			}
+		}
+
+		coords.push_back(p);
+	}
+	return coords;
+}
+int main(int argc, char**argv){
+	std::string line;
+	std::getline(std::cin,line);
+	std::stringstream stream (line);
+	unsigned long streamHolder;
+	unsigned long  d;
+	unsigned long numStars;
+	bool first = true;
+	while(stream >> streamHolder){
+		if(first){
+			d = streamHolder;
+			first = false;
+		}else{
+			numStars = streamHolder;
+		}
+	}
+	std::vector<Point> points = GetInput(numStars);
+    UniverseTreeNode* treeNode = 0;
+	for(unsigned long i = 0; i < points.size(); i++){
+		Point point = points.at(i);
+		unsigned long pointHash = (unsigned long)point.x*point.x + (unsigned long)point.y*point.y;
+		Galaxy* galaxy = FindGalaxy(point,treeNode,numStars);
+		for(unsigned long i = 0; i <numStars; i++){
+			Point p;
+			std::string coordS;
+			std::getline(std::cin,coordS);
+			std::stringstream stream2(coordS);
+			unsigned long coord;
+			unsigned long s = 0;
+			while(stream2 >> coord){
+				if(s == 0){
+					p.x = coord;
+					s++;
+				}else{
+					p.y = coord;
+					s = 0;
+				}
+			}
+		}
+		if(galaxy != 0){
+			galaxy->starCount += 1;
+			if(galaxy->starCount > (unsigned long) numStars/2){
+				std::cout << galaxy->starCount << std::endl;
+				return 0;
+			}
+		}else{
+			galaxy = new Galaxy;
+			galaxy->starCount = 1;
+			galaxy->location = point;
+			treeNode = AddGalaxy(galaxy, treeNode);
+		}
+	}
+	std::cout << "NO" << std::endl;
+	return 0;
+}
+
+

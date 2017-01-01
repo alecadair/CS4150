@@ -1,0 +1,36 @@
+/*
+ * ps5-6.cpp
+ *
+ *  Created on: Sep 29, 2016
+ *      Author: alecadair
+ */
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+#include <vector>
+#include <map>
+#include <set>
+
+
+class Student{
+	std::string name;
+	int serial;
+};
+
+class School{
+	std::vector<std::set<Student> > school;
+	std::map<std::string, int> legend;
+	int numStudents;
+};
+School* CreateGraphFromInput(){
+	School* school = new School;
+	std::string numStudents;
+	getline(std::cin,numStudents);
+	school->numStudents = stoi(numStudents);
+	return school;
+}
+int main(int argc, char** argv){
+	School * school = CreateGraphFromInput();
+}
+

@@ -1,0 +1,79 @@
+
+/*
+ * ps4-5.cpp
+ *
+ *  Created on: Sep 22, 2016
+ *      Author: alecadair
+ */
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+#include <string>
+#include <list>
+#include <vector>
+#include <map>
+#include <sstream>
+
+class City{
+public:
+	std::string name;
+	int vertIndex;
+	int toll;
+};
+
+/*class EdgeNode{
+public:
+	EdgeNode* nextNode;
+};*/
+
+class Map{
+public:
+	std::map<std::string,std::list<City> > adjList;
+	//std::list<City> list;
+	int numCities;
+};
+
+Map* CreateMapFromInput(){
+	Map* roadMap = new Map;
+	std::string numCities;
+	//First Create Cities
+	getline(std::cin,numCities);
+	roadMap->numCities = stoi(numCities);
+	for(int i = 0; i < roadMap->numCities; i ++){
+		std::list<City> cities;
+		City city;
+		std::string cityName;
+		getline(std::cin, cityName);
+		std::stringstream stream(cityName);
+		int toll = 0;
+		for(int j = 0; j < 2; j++){
+			std::string name;
+			if(j == 0){
+				stream >> name;
+				city.name = name;
+				std::cout << name;
+
+			}else{
+				stream >> toll;
+				city.toll = toll;
+				std::cout <<" "<< toll << std::endl;
+			}
+		}
+		city.vertIndex = i;
+		roadMap->adjList[city.name] = cities;
+	}
+
+	std::string numRoads;
+	getline(std::cin,numRoads);
+	int numHighways = stoi(numRoads);
+	for(int i = 0; i < numHighways; i ++){
+
+	}
+	return roadMap;
+}
+
+int main (int argc, char** argv){
+	Map* roadMap = CreateMapFromInput();
+	return 0;
+}

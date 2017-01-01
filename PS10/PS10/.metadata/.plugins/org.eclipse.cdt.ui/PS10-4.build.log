@@ -1,0 +1,72 @@
+14:28:19 **** Incremental Build of configuration Debug for project PS10-4 ****
+make all 
+Building file: ../ps10-4.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ps10-4.d" -MT"ps10-4.o" -o "ps10-4.o" "../ps10-4.cpp"
+In file included from /usr/include/c++/4.8.2/unordered_map:35:0,
+                 from ../ps10-4.cpp:13:
+/usr/include/c++/4.8.2/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support is currently experimental, and must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support for the \
+  ^
+../ps10-4.cpp: In member function ‘size_t Hash::operator()(const Point3D&) const’:
+../ps10-4.cpp:23:15: error: ‘hash’ is not a member of ‘std’
+   size_t h1 = std::hash<int>()(p.r);
+               ^
+../ps10-4.cpp:23:25: error: expected primary-expression before ‘int’
+   size_t h1 = std::hash<int>()(p.r);
+                         ^
+../ps10-4.cpp:24:15: error: ‘hash’ is not a member of ‘std’
+   size_t h2 = std::hash<int>()(p.k);
+               ^
+../ps10-4.cpp:24:25: error: expected primary-expression before ‘int’
+   size_t h2 = std::hash<int>()(p.k);
+                         ^
+../ps10-4.cpp:25:15: error: ‘hash’ is not a member of ‘std’
+   size_t h3 = std::hash<int>()(p.door);
+               ^
+../ps10-4.cpp:25:25: error: expected primary-expression before ‘int’
+   size_t h3 = std::hash<int>()(p.door);
+                         ^
+../ps10-4.cpp: At global scope:
+../ps10-4.cpp:40:9: error: ‘unordered_map’ in namespace ‘std’ does not name a type
+ typedef std::unordered_map<Point3D,int,Hash,Equals> Point3DMap;
+         ^
+../ps10-4.cpp:42:87: error: ‘Point3DMap’ has not been declared
+ int max_value(int r, int uncloseableRoom, int k, std::vector<std::vector<int> > rooms,Point3DMap cache){
+                                                                                       ^
+../ps10-4.cpp: In function ‘int max_value(int, int, int, std::vector<std::vector<int> >, int)’:
+../ps10-4.cpp:52:14: error: request for member ‘count’ in ‘cache’, which is of non-class type ‘int’
+     if(cache.count(point) > 0){
+              ^
+../ps10-4.cpp:53:18: error: no match for ‘operator[]’ (operand types are ‘int’ and ‘Point3D’)
+      return cache[point];
+                  ^
+../ps10-4.cpp:81:14: error: no match for ‘operator[]’ (operand types are ‘int’ and ‘Point3D’)
+         cache[point] = result;
+              ^
+../ps10-4.cpp:111:10: error: no match for ‘operator[]’ (operand types are ‘int’ and ‘Point3D’)
+     cache[point] = result;
+          ^
+../ps10-4.cpp:43:9: warning: unused variable ‘sub_r’ [-Wunused-variable]
+     int sub_r = r;
+         ^
+../ps10-4.cpp:44:9: warning: unused variable ‘room’ [-Wunused-variable]
+     int room = uncloseableRoom;
+         ^
+../ps10-4.cpp:45:9: warning: unused variable ‘sub_k’ [-Wunused-variable]
+     int sub_k = k;
+         ^
+../ps10-4.cpp: In function ‘void max_val(std::vector<std::vector<int> >, int, int)’:
+../ps10-4.cpp:118:2: error: ‘Point3DMap’ was not declared in this scope
+  Point3DMap cache;
+  ^
+../ps10-4.cpp:118:13: error: expected ‘;’ before ‘cache’
+  Point3DMap cache;
+             ^
+../ps10-4.cpp:119:38: error: ‘cache’ was not declared in this scope
+  int result = max_value(0,-1,K,rooms,cache);
+                                      ^
+make: *** [ps10-4.o] Error 1
+
+14:28:19 Build Finished (took 232ms)
+

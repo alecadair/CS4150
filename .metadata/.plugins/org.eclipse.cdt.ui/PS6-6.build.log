@@ -1,0 +1,7 @@
+22:35:23 **** Incremental Build of configuration Debug for project PS6-6 ****
+make all 
+c++    -c -o ps6-6.o ps6-6.cpp
+g++ -std=c++11 -g -Wall -o ps6-6 ps6-6.cpp
+
+22:35:25 Build Finished (took 1s.986ms)
+

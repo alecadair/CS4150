@@ -1,0 +1,69 @@
+/*
+ * ps5-6.cpp
+ *
+ *  Created on: Sep 29, 2016
+ *      Author: alecadair
+ */
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+#include <vector>
+#include <sstream>
+#include <map>
+#include <set>
+
+
+class Student{
+public:
+	std::string name;
+	int serial;
+};
+
+class School{
+public:
+	std::vector<std::set<Student*> > studentGraph;
+	std::map<std::string, Student*> legend;
+	int numStudents;
+};
+
+School* CreateGraphFromInput(){
+	School* school = new School;
+	std::string numStudents;
+	getline(std::cin,numStudents);
+	int num_students = stoi(numStudents);
+	school->numStudents = num_students;
+	for(int i = 0; i < num_students; i++){
+		std::string studentName;
+		Student* student = new Student;
+		getline(std::cin,studentName);
+		student->name = studentName;
+		student->serial = i;
+		school->legend[studentName] = student;
+	}
+	std::string numFriendPairs;
+	getline(std::cin,numFriendPairs);
+	int num_pairs = stoi(numFriendPairs);
+	for(int i = 0; i < num_pairs; i++){
+		std::string friend1;
+		std::string friend2;
+		std::string line;
+		getline(std::cin,line);
+		std::stringstream ss(line);
+		for(int j = 0; j < 2; j ++){
+			if(j == 0){
+				ss >> friend1;
+			}
+			else{
+				ss >> friend2;
+			}
+		}
+	}
+
+	return school;
+}
+
+int main(int argc, char** argv){
+	School * school = CreateGraphFromInput();
+}
+

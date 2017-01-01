@@ -1,0 +1,155 @@
+/*
+ * ps5-6.cpp
+ *
+ *  Created on: Sep 29, 2016
+ *      Author: alecadair
+ */
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <sstream>
+#include <map>
+#include <set>
+
+
+class Student{
+public:
+	std::string name;
+	int serial;
+};
+
+class School{
+public:
+	std::vector<std::set<Student*>*> studentGraph;
+	std::map<std::string, Student*> legend;
+	int numStudents;
+};
+
+School* CreateGraphFromInput(){
+	School* school = new School;
+	std::string numStudents;
+	getline(std::cin,numStudents);
+	int num_students = stoi(numStudents);
+	school->numStudents = num_students;
+	for(int i = 0; i < num_students; i++){
+		std::string studentName;
+		Student* student = new Student;
+		getline(std::cin,studentName);
+		student->name = studentName;
+		student->serial = i;
+		school->legend[studentName] = student;
+
+		std::set<Student*>* studentSet = new std::set<Student*>;
+		school->studentGraph.push_back(studentSet);
+	}
+	std::string numFriendPairs;
+	getline(std::cin,numFriendPairs);
+	int num_pairs = stoi(numFriendPairs);
+	for(int i = 0; i < num_pairs; i++){
+		std::string friend1;
+		std::string friend2;
+		std::string line;
+		getline(std::cin,line);
+		std::stringstream ss(line);
+		for(int j = 0; j < 2; j ++){
+			if(j == 0){
+				ss >> friend1;
+			}
+			else{
+				ss >> friend2;
+			}
+		}
+		Student* s1 = school->legend[friend1];
+		Student* s2 = school->legend[friend2];
+		int f1index = s1->serial;
+		int f2index = s2->serial;
+		school->studentGraph.at(f1index)->insert(s2);
+		school->studentGraph.at(f2index)->insert(s1);
+	}
+	return school;
+}
+
+void BreadthFirstSearch(School* school, Student* student){
+	int max = -1;
+	std::set<std::string> student_names;
+	std::map<std::string,Student*>::iterator nameIter = school->legend.begin();
+
+	for(; nameIter != school->legend.end(); nameIter ++){
+		std::string name = (*nameIter).first;
+		student_names.insert(name);
+	}
+	int distances[school->numStudents];
+	Student* previous[school->numStudents];
+	for(int i = 0; i < school->numStudents; i ++){
+		previous[i] = 0;
+		distances[i] = max;
+	}
+	std::queue<Student*> queue;
+	distances[student->serial] = 0;
+	std::cout << student->name << " ";
+	student_names.erase(student->name);
+	queue.push(student);
+	while(!queue.empty()){
+		Student* currentStudent = queue.front();
+		queue.pop();
+		std::vector<std::string> names;
+		int index = currentStudent->serial;
+		std::set<Student*>::iterator iter = school->studentGraph.at(index)->begin();
+		for(; iter != school->studentGraph.at(index)->end(); iter++){
+			Student* buddy = *iter;
+			//names.push_back(buddy->name);
+			int buddyIndex = buddy->serial;
+			if(distances[buddyIndex] == -1){
+				queue.push(buddy);
+				names.push_back(buddy->name);
+				student_names.erase(buddy->name);
+//				if(!queue.empty()){
+//					names.push_back(buddy->name);
+//				}
+//				if(queue.empty()){
+//					std::map<std::string,Student*>::iterator iter = school->legend.begin();
+//					for(;iter != school->legend.end(); iter++){
+//						names.push_back(iter->first);
+//					}
+//				}
+//				std::sort(names.begin(),names.end());
+//				for(int j = 0; j < names.size(); j++){
+//					std::cout << names.at(j) <<" ";
+//				}
+				distances[buddyIndex] = distances[index] + 1;
+				previous[buddyIndex] = currentStudent;
+			}
+		}
+		std::sort(names.begin(),names.end());
+		for(int j = 0; j < names.size(); j++){
+			std::cout << names.at(j) <<" ";
+		}
+	}
+	std::vector<std::string> restOfNames;
+	std::set<std::string>::iterator nameIt = student_names.begin();
+	for(;nameIt != student_names.end(); nameIt++){
+		restOfNames.push_back(*nameIt);
+	}
+	sort(restOfNames.begin(), restOfNames.end());
+	for(int i = 0; i < restOfNames.size(); i ++){
+		std::cout << restOfNames.at(i) << " ";
+	}
+	std::cout << std::endl;
+
+}
+int main(int argc, char** argv){
+	School * school = CreateGraphFromInput();
+	std::string numReports;
+	getline(std::cin,numReports);
+	int num_reports = stoi(numReports);
+	for(int i = 0; i < num_reports; i++){
+		std::string student;
+		getline(std::cin,student);
+		Student* studentPtr = school->legend[student];
+		BreadthFirstSearch(school,studentPtr);
+	}
+}
+

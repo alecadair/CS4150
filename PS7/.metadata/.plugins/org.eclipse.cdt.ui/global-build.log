@@ -1,0 +1,1275 @@
+11:42:39 **** Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘long int* greatest_common_divisor(long int, long int)’:
+ps7-7.cpp:26:10: error: invalid conversion from ‘long int’ to ‘long int*’ [-fpermissive]
+   return a;
+          ^
+ps7-7.cpp: In function ‘long int* extended_euclids(long int, long int)’:
+ps7-7.cpp:41:48: error: array must be initialized with a brace-enclosed initializer
+   long result_prime[3] = extended_euclids(b,a%b);
+                                                ^
+ps7-7.cpp:34:7: warning: address of local variable ‘result’ returned [-Wreturn-local-addr]
+  long result[3];
+       ^
+ps7-7.cpp: In function ‘int main(int, char**)’:
+ps7-7.cpp:52:40: error: invalid conversion from ‘long int*’ to ‘long int’ [-fpermissive]
+  long gcd = greatest_common_divisor(0,0);
+                                        ^
+make: *** [ps7-7.o] Error 1
+11:43:02 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘long int* greatest_common_divisor(long int, long int)’:
+ps7-7.cpp:26:10: error: invalid conversion from ‘long int’ to ‘long int*’ [-fpermissive]
+   return a;
+          ^
+ps7-7.cpp: In function ‘long int* extended_euclids(long int, long int)’:
+ps7-7.cpp:34:7: warning: address of local variable ‘result’ returned [-Wreturn-local-addr]
+  long result[3];
+       ^
+ps7-7.cpp: In function ‘int main(int, char**)’:
+ps7-7.cpp:52:40: error: invalid conversion from ‘long int*’ to ‘long int’ [-fpermissive]
+  long gcd = greatest_common_divisor(0,0);
+                                        ^
+make: *** [ps7-7.o] Error 1
+11:43:25 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘long int* extended_euclids(long int, long int)’:
+ps7-7.cpp:34:7: warning: address of local variable ‘result’ returned [-Wreturn-local-addr]
+  long result[3];
+       ^
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp: In function ‘long int* extended_euclids(long int, long int)’:
+ps7-7.cpp:34:7: warning: address of local variable ‘result’ returned [-Wreturn-local-addr]
+  long result[3];
+       ^
+ps7-7.cpp: In function ‘int main(int, char**)’:
+ps7-7.cpp:52:7: warning: unused variable ‘gcd’ [-Wunused-variable]
+  long gcd = greatest_common_divisor(0,0);
+       ^
+ps7-7.cpp: In function ‘long int* extended_euclids(long int, long int)’:
+ps7-7.cpp:48:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+11:44:07 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+11:44:36 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘long int* extended_euclids(long int, long int)’:
+ps7-7.cpp:34:7: warning: address of local variable ‘result’ returned [-Wreturn-local-addr]
+  long result[3];
+       ^
+ps7-7.cpp:34:7: warning: address of local variable ‘result’ returned [-Wreturn-local-addr]
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp: In function ‘long int* extended_euclids(long int, long int)’:
+ps7-7.cpp:34:7: warning: address of local variable ‘result’ returned [-Wreturn-local-addr]
+  long result[3];
+       ^
+ps7-7.cpp:34:7: warning: address of local variable ‘result’ returned [-Wreturn-local-addr]
+ps7-7.cpp: In function ‘int main(int, char**)’:
+ps7-7.cpp:53:7: warning: unused variable ‘gcd’ [-Wunused-variable]
+  long gcd = greatest_common_divisor(0,0);
+       ^
+11:47:26 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp: In function ‘int main(int, char**)’:
+ps7-7.cpp:53:7: warning: unused variable ‘gcd’ [-Wunused-variable]
+  long gcd = greatest_common_divisor(0,0);
+       ^
+12:11:19 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp: In function ‘int main(int, char**)’:
+ps7-7.cpp:59:8: warning: unused variable ‘command’ [-Wunused-variable]
+  char* command;
+        ^
+ps7-7.cpp:61:7: warning: unused variable ‘gcd’ [-Wunused-variable]
+  long gcd = greatest_common_divisor(0,0);
+       ^
+12:13:30 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘int main(int, char**)’:
+ps7-7.cpp:60:37: error: no matching function for call to ‘getline(std::istream&, char*&)’
+  while(std::getline(std::cin,command)){
+                                     ^
+ps7-7.cpp:60:37: note: candidates are:
+In file included from /usr/include/c++/4.8.2/string:53:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from ps7-7.cpp:10:
+/usr/include/c++/4.8.2/bits/basic_string.tcc:1068:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+     getline(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8.2/bits/basic_string.tcc:1068:5: note:   template argument deduction/substitution failed:
+ps7-7.cpp:60:37: note:   mismatched types ‘std::basic_string<_CharT, _Traits, _Alloc>’ and ‘char*’
+  while(std::getline(std::cin,command)){
+                                     ^
+In file included from /usr/include/c++/4.8.2/string:52:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from ps7-7.cpp:10:
+/usr/include/c++/4.8.2/bits/basic_string.h:2793:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     getline(basic_istream<_CharT, _Traits>& __is,
+     ^
+/usr/include/c++/4.8.2/bits/basic_string.h:2793:5: note:   template argument deduction/substitution failed:
+ps7-7.cpp:60:37: note:   mismatched types ‘std::basic_string<_CharT, _Traits, _Alloc>’ and ‘char*’
+  while(std::getline(std::cin,command)){
+                                     ^
+make: *** [ps7-7.o] Error 1
+12:14:23 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp: In function ‘int main(int, char**)’:
+ps7-7.cpp:63:7: warning: unused variable ‘gcd’ [-Wunused-variable]
+  long gcd = greatest_common_divisor(0,0);
+       ^
+12:21:00 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp: In function ‘int main(int, char**)’:
+ps7-7.cpp:64:7: warning: unused variable ‘gcd’ [-Wunused-variable]
+  long gcd = greatest_common_divisor(0,0);
+       ^
+12:36:41 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp: In function ‘int main(int, char**)’:
+ps7-7.cpp:69:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < command_strings.size(); i ++){
+                                           ^
+12:36:50 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+12:39:43 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘int main(int, char**)’:
+ps7-7.cpp:73:6: error: ‘strcmp’ is not a member of ‘std’
+   if(std::strcmp(command_strings[0],"isPrime") == 0){
+      ^
+make: *** [ps7-7.o] Error 1
+12:40:01 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘int main(int, char**)’:
+ps7-7.cpp:73:6: error: ‘string’ has not been declared
+   if(string::compare(command_strings[0],"isPrime") == 0){
+      ^
+make: *** [ps7-7.o] Error 1
+12:40:11 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘int main(int, char**)’:
+ps7-7.cpp:73:55: error: no matching function for call to ‘std::basic_string<char>::compare(std::basic_string<char>&, const char [8])’
+   if(std::string::compare(command_strings[0],"isPrime") == 0){
+                                                       ^
+ps7-7.cpp:73:55: note: candidates are:
+In file included from /usr/include/c++/4.8.2/string:52:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from ps7-7.cpp:10:
+/usr/include/c++/4.8.2/bits/basic_string.h:2225:7: note: int std::basic_string<_CharT, _Traits, _Alloc>::compare(const std::basic_string<_CharT, _Traits, _Alloc>&) const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       compare(const basic_string& __str) const
+       ^
+/usr/include/c++/4.8.2/bits/basic_string.h:2225:7: note:   candidate expects 1 argument, 2 provided
+In file included from /usr/include/c++/4.8.2/string:53:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from ps7-7.cpp:10:
+/usr/include/c++/4.8.2/bits/basic_string.tcc:915:5: note: int std::basic_string<_CharT, _Traits, _Alloc>::compare(std::basic_string<_CharT, _Traits, _Alloc>::size_type, std::basic_string<_CharT, _Traits, _Alloc>::size_type, const std::basic_string<_CharT, _Traits, _Alloc>&) const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]
+     basic_string<_CharT, _Traits, _Alloc>::
+     ^
+/usr/include/c++/4.8.2/bits/basic_string.tcc:915:5: note:   candidate expects 3 arguments, 2 provided
+/usr/include/c++/4.8.2/bits/basic_string.tcc:930:5: note: int std::basic_string<_CharT, _Traits, _Alloc>::compare(std::basic_string<_CharT, _Traits, _Alloc>::size_type, std::basic_string<_CharT, _Traits, _Alloc>::size_type, const std::basic_string<_CharT, _Traits, _Alloc>&, std::basic_string<_CharT, _Traits, _Alloc>::size_type, std::basic_string<_CharT, _Traits, _Alloc>::size_type) const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]
+     basic_string<_CharT, _Traits, _Alloc>::
+     ^
+/usr/include/c++/4.8.2/bits/basic_string.tcc:930:5: note:   candidate expects 5 arguments, 2 provided
+/usr/include/c++/4.8.2/bits/basic_string.tcc:948:5: note: int std::basic_string<_CharT, _Traits, _Alloc>::compare(const _CharT*) const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+     basic_string<_CharT, _Traits, _Alloc>::
+     ^
+/usr/include/c++/4.8.2/bits/basic_string.tcc:948:5: note:   candidate expects 1 argument, 2 provided
+/usr/include/c++/4.8.2/bits/basic_string.tcc:963:5: note: int std::basic_string<_CharT, _Traits, _Alloc>::compare(std::basic_string<_CharT, _Traits, _Alloc>::size_type, std::basic_string<_CharT, _Traits, _Alloc>::size_type, const _CharT*) const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]
+     basic_string <_CharT, _Traits, _Alloc>::
+     ^
+/usr/include/c++/4.8.2/bits/basic_string.tcc:963:5: note:   candidate expects 3 arguments, 2 provided
+/usr/include/c++/4.8.2/bits/basic_string.tcc:979:5: note: int std::basic_string<_CharT, _Traits, _Alloc>::compare(std::basic_string<_CharT, _Traits, _Alloc>::size_type, std::basic_string<_CharT, _Traits, _Alloc>::size_type, const _CharT*, std::basic_string<_CharT, _Traits, _Alloc>::size_type) const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]
+     basic_string <_CharT, _Traits, _Alloc>::
+     ^
+/usr/include/c++/4.8.2/bits/basic_string.tcc:979:5: note:   candidate expects 4 arguments, 2 provided
+make: *** [ps7-7.o] Error 1
+12:41:02 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+21:21:14 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘long int modulus(int, int)’:
+ps7-7.cpp:19:14: error: too few arguments to function ‘int abs(int)’
+   return abs()
+              ^
+In file included from ps7-7.cpp:8:0:
+/usr/include/stdlib.h:770:12: note: declared here
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+ps7-7.cpp:20:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+ps7-7.cpp: In function ‘long int modular_inverse(long int, long int)’:
+ps7-7.cpp:71:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+ps7-7.cpp:71:2: error: expected ‘;’ before ‘}’ token
+make: *** [ps7-7.o] Error 1
+21:22:50 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘long int modular_inverse(long int, long int)’:
+ps7-7.cpp:71:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+ps7-7.cpp:71:2: error: expected ‘;’ before ‘}’ token
+make: *** [ps7-7.o] Error 1
+21:34:53 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp: In function ‘long int modular_inverse(long int, long int)’:
+ps7-7.cpp:76:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:36:54 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+22:09:53 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘char is_prime(long int)’:
+ps7-7.cpp:86:44: error: invalid use of member function (did you forget the ‘()’ ?)
+  int k = modulus((long)rand(),(long)a_list.size);
+                                            ^
+make: *** [ps7-7.o] Error 1
+22:10:25 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘char is_prime(long int)’:
+ps7-7.cpp:86:44: error: invalid use of member function (did you forget the ‘()’ ?)
+  int k = modulus((long)rand(),(long)a_list.size);
+                                            ^
+make: *** [ps7-7.o] Error 1
+22:10:27 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘char is_prime(long int)’:
+ps7-7.cpp:86:44: error: invalid use of member function (did you forget the ‘()’ ?)
+  int k = modulus((long)rand(),(long)a_list.size);
+                                            ^
+make: *** [ps7-7.o] Error 1
+22:10:37 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘char is_prime(long int)’:
+ps7-7.cpp:86:45: error: invalid use of member function (did you forget the ‘()’ ?)
+  long k = modulus((long)rand(),(long)a_list.size);
+                                             ^
+make: *** [ps7-7.o] Error 1
+22:10:40 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘char is_prime(long int)’:
+ps7-7.cpp:86:45: error: invalid use of member function (did you forget the ‘()’ ?)
+  long k = modulus((long)rand(),(long)a_list.size);
+                                             ^
+make: *** [ps7-7.o] Error 1
+22:10:59 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+22:11:04 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+22:11:36 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+22:11:38 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+22:11:40 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+22:13:08 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+22:13:11 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+22:13:28 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+22:13:32 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+22:14:20 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+22:15:40 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+22:19:35 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+22:19:40 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+22:24:11 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+22:31:04 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘int main(int, char**)’:
+ps7-7.cpp:119:56: error: cannot convert ‘char*’ to ‘char**’ for argument ‘2’ to ‘long int strtol(const char*, char**, int)’
+    num = strtol(command_strings[1].c_str(),endstring,10);
+                                                        ^
+ps7-7.cpp:120:34: error: cannot convert ‘std::basic_string<char>’ to ‘long int’ for argument ‘1’ to ‘char is_prime(long int)’
+    if(is_prime(command_strings[1])){
+                                  ^
+make: *** [ps7-7.o] Error 1
+22:31:37 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘int main(int, char**)’:
+ps7-7.cpp:120:34: error: cannot convert ‘std::basic_string<char>’ to ‘long int’ for argument ‘1’ to ‘char is_prime(long int)’
+    if(is_prime(command_strings[1])){
+                                  ^
+make: *** [ps7-7.o] Error 1
+22:31:50 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+22:32:46 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+22:39:33 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘char is_prime(long int)’:
+ps7-7.cpp:88:56: error: too many arguments to function ‘int rand()’
+  long k = modulus((long)rand((unsigned)time(&rand_time)),(long)a_list.size());
+                                                        ^
+In file included from ps7-7.cpp:8:0:
+/usr/include/stdlib.h:374:12: note: declared here
+ extern int rand (void) __THROW;
+            ^
+make: *** [ps7-7.o] Error 1
+22:40:09 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘char is_prime(long int)’:
+ps7-7.cpp:88:60: error: too many arguments to function ‘int rand()’
+  long k = modulus((long)rand((unsigned int)time(&rand_time)),(long)a_list.size());
+                                                            ^
+In file included from ps7-7.cpp:8:0:
+/usr/include/stdlib.h:374:12: note: declared here
+ extern int rand (void) __THROW;
+            ^
+make: *** [ps7-7.o] Error 1
+22:41:24 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘char is_prime(long int)’:
+ps7-7.cpp:88:61: error: void value not ignored as it ought to be
+  long k = modulus((long)srand((unsigned int)time(&rand_time)),(long)a_list.size());
+                                                             ^
+make: *** [ps7-7.o] Error 1
+22:42:03 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘char is_prime(long int)’:
+ps7-7.cpp:88:46: error: void value not ignored as it ought to be
+  long rand = srand((unsigned)time(&rand_time));
+                                              ^
+ps7-7.cpp:89:61: error: void value not ignored as it ought to be
+  long k = modulus((long)srand((unsigned int)time(&rand_time)),(long)a_list.size());
+                                                             ^
+make: *** [ps7-7.o] Error 1
+22:42:24 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘char is_prime(long int)’:
+ps7-7.cpp:88:52: error: void value not ignored as it ought to be
+  long rand = (long)srand((unsigned)time(&rand_time));
+                                                    ^
+ps7-7.cpp:89:61: error: void value not ignored as it ought to be
+  long k = modulus((long)srand((unsigned int)time(&rand_time)),(long)a_list.size());
+                                                             ^
+make: *** [ps7-7.o] Error 1
+22:42:42 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp: In function ‘char is_prime(long int)’:
+ps7-7.cpp:89:61: error: void value not ignored as it ought to be
+  long k = modulus((long)srand((unsigned int)time(&rand_time)),(long)a_list.size());
+                                                             ^
+make: *** [ps7-7.o] Error 1
+22:43:02 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+22:43:10 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+22:43:13 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+22:43:37 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+22:43:40 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+22:44:13 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+g++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -g -Wall -o ps7-7 ps7-7.cpp
+22:44:16 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+22:44:38 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+23:58:01 **** Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+23:58:16 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+23:58:48 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+23:58:54 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:02:52 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+00:05:17 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:05:34 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+00:06:10 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:06:12 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:06:13 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:06:14 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:06:16 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:06:20 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:06:22 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:06:25 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:06:26 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:06:28 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:06:29 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:06:31 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:06:33 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:06:35 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:06:37 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:06:39 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:06:41 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:09:33 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+00:09:42 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:09:56 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+00:10:00 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:10:16 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:10:18 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:10:23 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:10:24 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:10:25 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:10:26 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:10:27 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:10:28 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:10:29 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:10:30 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:10:31 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:10:32 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:10:33 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:11:14 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+00:11:18 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:11:23 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:11:25 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:11:26 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:11:28 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:11:31 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+00:11:33 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+18:39:03 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+18:39:12 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+18:39:16 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+18:39:18 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+18:39:23 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+18:39:25 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+18:40:23 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+13:42:40 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+13:42:54 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+13:44:19 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+13:44:24 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+13:44:53 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+13:44:56 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+13:50:46 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+13:53:22 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+13:54:22 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+13:54:30 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+13:54:47 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+13:54:52 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+14:10:46 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+14:10:53 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+14:11:06 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+14:11:10 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+14:22:26 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+14:22:33 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+14:25:44 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+14:25:47 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+14:25:54 **** Clean-only build of configuration Debug for project PS7-7 ****
+make clean 
+rm -f ps7-7
+rm -f ps7-7.o
+14:25:57 **** Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+14:28:34 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+14:28:45 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+14:29:17 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+14:29:20 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+14:30:14 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+14:30:19 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+14:31:19 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+14:31:25 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+14:31:36 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+14:31:40 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+14:32:25 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+14:32:28 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+14:33:48 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+14:39:25 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+14:40:44 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+14:40:50 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+14:50:19 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:129:11: error: no matching function for call to 'strtol'
+                        num2 = strtol(command_strings[2].c_str(),&end2,10);
+                               ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/stdlib.h:164:7: note: candidate function not viable: no known conversion from 'char *' to 'char **' for 2nd argument
+long     strtol(const char *, char **, int);
+         ^
+ps7-7.cpp:135:11: error: no matching function for call to 'strtol'
+                        num2 = strtol(command_strings[2].c_str(),&end2,10);
+                               ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/stdlib.h:164:7: note: candidate function not viable: no known conversion from 'char *' to 'char **' for 2nd argument
+long     strtol(const char *, char **, int);
+         ^
+ps7-7.cpp:136:11: error: no matching function for call to 'strtol'
+                        num3 = strtol(command_strings[3].c_str(),&end3,10);
+                               ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/stdlib.h:164:7: note: candidate function not viable: no known conversion from 'char *' to 'char **' for 2nd argument
+long     strtol(const char *, char **, int);
+         ^
+3 errors generated.
+make: *** [ps7-7.o] Error 1
+14:51:05 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:129:11: error: no matching function for call to 'strtol'
+                        num2 = strtol(command_strings[2].c_str(),&end2,10);
+                               ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/stdlib.h:164:7: note: candidate function not viable: no known conversion from 'char *' to 'char **' for 2nd argument
+long     strtol(const char *, char **, int);
+         ^
+ps7-7.cpp:135:11: error: no matching function for call to 'strtol'
+                        num2 = strtol(command_strings[2].c_str(),&end2,10);
+                               ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/stdlib.h:164:7: note: candidate function not viable: no known conversion from 'char *' to 'char **' for 2nd argument
+long     strtol(const char *, char **, int);
+         ^
+ps7-7.cpp:136:11: error: no matching function for call to 'strtol'
+                        num3 = strtol(command_strings[3].c_str(),&end3,10);
+                               ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/stdlib.h:164:7: note: candidate function not viable: no known conversion from 'char *' to 'char **' for 2nd argument
+long     strtol(const char *, char **, int);
+         ^
+3 errors generated.
+make: *** [ps7-7.o] Error 1
+14:56:46 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:135:11: error: no matching function for call to 'strtol'
+                        num2 = strtol(command_strings[2].c_str(),&end2,10);
+                               ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/stdlib.h:164:7: note: candidate function not viable: no known conversion from 'char *' to 'char **' for 2nd argument
+long     strtol(const char *, char **, int);
+         ^
+ps7-7.cpp:136:11: error: no matching function for call to 'strtol'
+                        num3 = strtol(command_strings[3].c_str(),&end3,10);
+                               ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/stdlib.h:164:7: note: candidate function not viable: no known conversion from 'char *' to 'char **' for 2nd argument
+long     strtol(const char *, char **, int);
+         ^
+2 errors generated.
+make: *** [ps7-7.o] Error 1
+14:57:26 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+14:57:36 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+14:58:03 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+15:01:39 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+15:04:08 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+16:13:26 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:102:8: warning: unused variable 'gcd' [-Wunused-variable]
+                long gcd = greatest_common_divisor(i,phi);
+                     ^
+ps7-7.cpp:107:7: warning: unused variable 'd' [-Wunused-variable]
+        long d = 0;
+             ^
+2 warnings generated.
+16:14:08 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+16:14:15 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+16:14:45 **** Clean-only build of configuration Debug for project PS7-7 ****
+make clean 
+rm -f ps7-7
+rm -f ps7-7.o
+16:14:54 **** Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+16:28:45 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+16:47:10 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:33:25: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+                result = result >> 63 - i;
+                                ~~ ~~~^~~
+ps7-7.cpp:33:25: note: place parentheses around the '-' expression to silence this warning
+                result = result >> 63 - i;
+                                      ^
+                                   (     )
+1 warning generated.
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:33:25: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+                result = result >> 63 - i;
+                                ~~ ~~~^~~
+ps7-7.cpp:33:25: note: place parentheses around the '-' expression to silence this warning
+                result = result >> 63 - i;
+                                      ^
+                                   (     )
+1 warning generated.
+16:47:28 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+17:00:49 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:138:15: error: invalid digit 'f' in decimal constant
+        long base = 7fffffff;
+                     ^
+1 error generated.
+make: *** [ps7-7.o] Error 1
+17:14:47 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:138:15: error: invalid digit 'f' in decimal constant
+        long base = 7fffffff;
+                     ^
+1 error generated.
+make: *** [ps7-7.o] Error 1
+17:15:08 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:138:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+1 warning generated.
+17:23:28 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:138:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+1 warning generated.
+17:25:23 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+17:25:29 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:138:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+1 warning generated.
+17:25:50 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+17:25:55 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+17:25:56 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+17:25:56 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+17:25:56 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+17:25:56 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+17:27:02 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:138:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+1 warning generated.
+17:30:06 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:138:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+1 warning generated.
+17:33:24 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+1 warning generated.
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:138:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+2 warnings generated.
+17:36:37 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+1 warning generated.
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:138:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+2 warnings generated.
+17:40:21 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:30:6: error: use of undeclared identifier 'b'
+                if(b&1){
+                   ^
+ps7-7.cpp:31:28: error: use of undeclared identifier 'a'
+                        result = modulus(result*a,N);
+                                                ^
+ps7-7.cpp:50:2: error: expected 'while' in do/while loop
+        if(y == 0){
+        ^
+ps7-7.cpp:29:2: note: to match this 'do'
+        do{
+        ^
+1 warning and 3 errors generated.
+make: *** [ps7-7.o] Error 1
+17:40:41 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:50:2: error: expected 'while' in do/while loop
+        if(y == 0){
+        ^
+ps7-7.cpp:29:2: note: to match this 'do'
+        do{
+        ^
+1 warning and 1 error generated.
+make: *** [ps7-7.o] Error 1
+17:42:20 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+1 warning generated.
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:147:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+2 warnings generated.
+17:57:51 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+1 warning generated.
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:150:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+2 warnings generated.
+18:00:57 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+1 warning generated.
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:150:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+2 warnings generated.
+18:03:02 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+1 warning generated.
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:150:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+2 warnings generated.
+18:06:25 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:108:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+2 warnings generated.
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:108:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+ps7-7.cpp:151:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+3 warnings generated.
+18:07:36 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+1 warning generated.
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:151:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+2 warnings generated.
+18:08:20 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+18:11:16 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+1 warning generated.
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:151:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+2 warnings generated.
+18:17:19 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+1 warning generated.
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:151:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+2 warnings generated.
+18:19:50 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+1 warning generated.
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:151:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+2 warnings generated.
+18:22:23 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+1 warning generated.
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:151:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+2 warnings generated.
+18:22:32 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+18:25:00 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+1 warning generated.
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:157:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+2 warnings generated.
+19:06:24 **** Build of configuration Debug for project PS7-7 ****
+make all 
+make: Nothing to be done for `all'.
+19:10:33 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:144:11: error: assigning to 'unsigned long' from incompatible type 'void'
+        priv_exp = modular_inverse(pub_exp,phi);
+                 ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning and 1 error generated.
+make: *** [ps7-7.o] Error 1
+19:12:32 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+1 warning generated.
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+ps7-7.cpp:160:7: warning: unused variable 'base' [-Wunused-variable]
+        long base = 0x7fffffff;
+             ^
+2 warnings generated.
+19:13:14 **** Incremental Build of configuration Debug for project PS7-7 ****
+make all 
+c++    -c -o ps7-7.o ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+1 warning generated.
+g++ -std=c++11 -stdlib=libc++ -g -Wall -o ps7-7 ps7-7.cpp
+ps7-7.cpp:18:7: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if(x < 0){
+           ~ ^ ~
+1 warning generated.

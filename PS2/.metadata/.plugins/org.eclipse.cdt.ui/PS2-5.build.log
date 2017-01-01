@@ -1,0 +1,6 @@
+00:41:56 **** Incremental Build of configuration Debug for project PS2-5 ****
+make all 
+make: Nothing to be done for `all'.
+
+00:41:57 Build Finished (took 127ms)
+
